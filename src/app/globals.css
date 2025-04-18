@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* styles/globals.css or styles.css */
+body.red-filter {
+    filter: sepia(1) saturate(5) hue-rotate(-50deg);  /* Red filter like Sharingan */
+    animation: laggy 1s infinite;
+  }
+  
+@keyframes laggy {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-10px) translateY(10px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+body{
+  background-color: black;
+}
