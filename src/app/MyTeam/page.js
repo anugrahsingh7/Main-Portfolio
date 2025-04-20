@@ -108,33 +108,33 @@ function MyTeam() {
     
     <div className="w-full h-[5%] flex items-center justify-between text-black/90">
       <h1 className= {` ${anton.className} text-3xl font-bold`}>Me & My Team</h1>
-      <RiTeamLine  className="text-4xl"/>
+      <RiTeamLine className="text-4xl"/>
     </div>
 
-    <div className="w-full h-[75%]   p-4">
+    <div className="w-full h-[75%] p-4">
       <div className={`flex w-full gap-2 ${anton.className} text-black/90 text-2xl font-bold justify-between mt-24`}>
         <div className="w-1/4 text-center ">Frontend Developer</div>
         <div className="w-1/4 text-center">Backend Developer</div>
-        <div className="w-1/4 text-center">UI/UX Designer</div>
+        <div className="w-1/4 text-center">Mordern UI Designer</div>
         <div className="w-1/4 text-center">Full Stack Developer</div>
       </div>
       <div className={` mt-8 text-7xl ${greatVibes.className} flex justify-start`}>
         <div className="flex flex-col ">
       <button 
         onClick={() => scrollToSection(anugrahRef, 'anugrah')} 
-        className={`mt-4 p-5 w-full rounded-4xl cursor-pointer transition-all hover:bg-black/80 duration-300 hover:shadow-lg hover:shadow-black/30`}
+        className={`mt-4 p-5 w-full rounded-2xl cursor-pointer transition-all hover:bg-black/80 duration-300 hover:shadow-lg hover:shadow-black/30`}
       >
         Anugrah Singh
       </button>
       <button 
         onClick={() => scrollToSection(vaibhavRef, 'vaibhav')} 
-        className={`mt-4 p-5 w-full  rounded-4xl cursor-pointer transition-all hover:bg-black/80  duration-300 hover:shadow-lg hover:shadow-black/30`}
+        className={`mt-4 p-5 w-full  rounded-2xl cursor-pointer transition-all hover:bg-black/80  duration-300 hover:shadow-lg hover:shadow-black/30`}
       >
         Vaibhav Sinha
       </button>
       <button 
         onClick={() => scrollToSection(sumitRef, 'sumit')} 
-        className={`mt-4 p-5 w-full  rounded-4xl cursor-pointer  transition-all hover:bg-black/80  duration-300 hover:shadow-lg hover:shadow-black/30`}
+        className={`mt-4 p-5 w-full  rounded-2xl cursor-pointer  transition-all hover:bg-black/80  duration-300 hover:shadow-lg hover:shadow-black/30`}
       >
         Sumit Joshi
       </button>
@@ -158,7 +158,7 @@ function MyTeam() {
       
       <div className="absolute inset-0 flex flex-col items-center justify-end pb-16 p-8 opacity-0 group-hover:opacity-100 transform translate-y-10 group-hover:translate-y-0 transition-all duration-500">
         <div className={`${anton.className} text-4xl font-bold mb-4 text-red-400 transform group-hover:scale-110 transition-duration-300 drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]`}>Anugrah Singh</div>
-        <p className="mb-6 text-center max-w-md text-white/90 text-lg leading-relaxed font-light hover:text-white transition-all duration-300 drop-shadow-[0_1px_1px_rgba(0,0,0,0.9)]">I'm a BTech Computer Science student with a strong passion for full-stack web development and AI integration. I specialize in building responsive, real-world applications using React.js, Next.js, and MongoDB.</p>
+        <p className="mb-6 text-center max-w-md text-white/90 text-lg leading-relaxed font-light hover:text-white transition-all duration-300 drop-shadow-[0_1px_1px_rgba(0,0,0,0.9)]">I'm a passionate web developer with hands-on experience in modern technologies like GSAP, Locomotive Scroll, Lenis, Spline, Framer Motion, and Three.js. I specialize in creating smooth, interactive, and visually captivating user experiences using React, Next.js, and MongoDB.</p>
         
         <div className="flex gap-4 mb-8">
           <button onClick={() => openLink('https://github.com/anugrahsinghy')} className="bg-red-400/30 p-3 rounded-full hover:bg-red-400 hover:scale-110 transition-all duration-300 shadow-[0_4px_6px_rgba(0,0,0,0.3)] hover:shadow-[0_6px_8px_rgba(0,0,0,0.5)]">
@@ -177,7 +177,7 @@ function MyTeam() {
         </button>
       </div>
       
-      <div className={`${anton.className} text-3xl font-bold relative z-10 group-hover:opacity-0 transition-all duration-300 drop-shadow-[0_2px_2px_rgba(0,0,0,0.7)]`}>HOVER ME !</div>
+      <div className={`${anton.className} text-3xl opacity-75 font-bold relative z-10 group-hover:opacity-0 transition-all duration-300 drop-shadow-[0_2px_2px_rgba(0,0,0,0.7)]`}>HOVER ME !</div>
     </div>
     
     <div ref={vaibhavRef} className="group bg-black/90 w-2/3 min-h-[70vh] my-32 flex flex-col items-center justify-center bg-[url('/VaibhavBG.jpg')] bg-cover bg-center bg-no-repeat rounded-2xl relative overflow-hidden">
@@ -204,7 +204,7 @@ function MyTeam() {
         </button>
       </div>
       
-      <div className={`${anton.className} text-3xl font-bold relative z-10 group-hover:opacity-0 transition-all duration-300 drop-shadow-[0_2px_2px_rgba(0,0,0,0.7)]`}>HOVER ME !</div>
+      <div className={`${anton.className} text-3xl opacity-75 font-bold relative z-10 group-hover:opacity-0 transition-all duration-300 drop-shadow-[0_2px_2px_rgba(0,0,0,0.7)]`}>HOVER ME !</div>
     </div>
     
     <div ref={sumitRef} className="group bg-black/90 w-2/3 min-h-[70vh] my-32 flex flex-col items-center justify-center bg-[url('/SumitBG.jpg')] bg-cover bg-center bg-no-repeat rounded-2xl relative overflow-hidden">
@@ -231,7 +231,7 @@ function MyTeam() {
         </button>
       </div>
       
-      <div className={`${anton.className} text-3xl font-bold relative z-10 group-hover:opacity-0 transition-all duration-300 drop-shadow-[0_2px_2px_rgba(0,0,0,0.7)]`}>HOVER ME !</div>
+      <div className={`${anton.className} text-3xl opacity-75 font-bold relative z-10 group-hover:opacity-0 transition-all duration-300 drop-shadow-[0_2px_2px_rgba(0,0,0,0.7)]`}>HOVER ME !</div>
     </div>
 
     <div className="bg-transparent w-full min-h-[1vh] my-12">
