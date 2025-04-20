@@ -67,7 +67,7 @@ const SkillsHeading = () => {
     }, [hasAnimated]);
     
     return (
-        <div ref={containerRef} className="h-screen w-screen bg-black text-white flex justify-center items-center p-2 gap-x-2 mb-10">
+        <div ref={containerRef} className="h-screen w-screen bg-black text-white flex justify-center items-center p-2 gap-x-2">
             <div ref={el => letterRefs.current[0] = el} className={`h-screen w-1/6 bg-cover flex justify-center items-center text-[14rem] rounded-sm font-extrabold grayscale hover:grayscale-[0%] transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-2xl hover:shadow-white/20 ${anton.className}`}
              style={{ backgroundImage: "url('https://wallpapers.com/images/hd/1080x1920-ugd930ckdcujq44s.jpg')" }}>S</div>
             <div ref={el => letterRefs.current[1] = el} className={`h-screen w-1/6 bg-cover flex justify-center items-center text-[14rem] rounded-sm font-extrabold grayscale hover:grayscale-[0%] transition-all duration-500 ease-in-out hover:scale-110 hover:-rotate-3 hover:shadow-2xl hover:shadow-white/20 ${anton.className}`}

@@ -28,10 +28,12 @@ const Navbar = () => {
 
   return (
     <nav className="bg-transparent text-[#f2d9ca] w-full ">
-      <div className="container mx-auto px-6 py-3 flex items-center justify-between">
+      <div className="container mx-auto px-0 py-3 flex items-center justify-between">
         
         {/* Company Name */}
-        <div className="text-lg font-bold"><img className="w-10 h-10" src="Anugrah singh logo-modified (1).png" alt="logo" /></div>
+        <div className="text-lg font-bold -ms-14"><img className="w-10 h-10" src="Anugrah singh logo-modified (1).png" alt="logo" />
+        
+        </div>
 
         {/* Notch Button with Toggle */}
         <div
@@ -68,7 +70,7 @@ const Navbar = () => {
             <span className="tooltip">Email</span>
             <MdEmail className="text-xl"/>
             </button>
-            <button className="icon twitter" onClick={() => window.open('https://github.com/anugrahsingh7777', '_blank')}>
+            <button className="icon twitter" onClick={() => window.open('https://github.com/anugrahsingh7', '_blank')}>
             <span className="tooltip">Github</span>
             <FaGithub className="text-xl" />
             </button>
@@ -99,12 +101,7 @@ const Navbar = () => {
 
         {/* Icons */}
         <div className="flex items-center gap-4">
-          <button className="text-xl hover:text-gray-400 cursor-pointer" onClick={() => window.location.href = '#projects'}>
-            <MdOutlineWork />
-          </button>
-          <button className="text-xl hover:text-gray-400 cursor-pointer" onClick={() => window.location.href = '#contact'}>
-            <MdContacts />
-          </button>
+          
         </div>
       </div>
     </nav>

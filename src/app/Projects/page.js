@@ -360,10 +360,8 @@ const Projects = () => {
         </div>
       </div>
       
-      {/* Scroll indicator */}
-      <div className="fixed bottom-5 left-1/2 transform -translate-x-1/2 text-white text-sm opacity-70 animate-bounce">
-        Scroll to navigate
-      </div>
+     
+      
     </div>
   );
 };

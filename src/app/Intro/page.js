@@ -27,45 +27,7 @@ const Intro = () => {
     setIsClient(true);
   }, []);
 
-  useEffect(() => {
-    if (!isClient || !paragraphRef.current) return;
-
-    const text = paragraphRef.current;
-    const originalText = text.textContent || "";
-    text.textContent = "";
-
-    // Create spans for each letter
-    const letters = originalText.split("");
-    const spans = letters.map((letter, i) => {
-      const span = document.createElement("span");
-      span.textContent = letter === ' ' ? '\u00A0' : letter;
-      span.style.opacity = "0";
-      span.style.display = "inline-block"; // Ensure proper spacing
-      return span;
-    });
-
-    spans.forEach(span => text.appendChild(span));
-
-    // Create animation
-    const animation = gsap.to(spans, {
-      opacity: 1,
-      stagger: 0.03,
-      scrollTrigger: {
-        trigger: text,
-        start: "top 90%",
-        end: "bottom 10%",
-        scrub: true,
-      },
-    });
-
-    return () => {
-      // Cleanup
-      animation.kill();
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-      text.textContent = originalText; // Restore original text
-    };
-  }, [isClient]);
-
+  
   return (
     <div id="intro" className={`h-screen w-screen bg-black ${yellowtail.className}`}>
       <div className="fixed top-0 left-0 text-white">

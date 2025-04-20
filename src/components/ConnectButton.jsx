@@ -1,12 +1,14 @@
 'use client'; // Required for client-side interactivity
 
 import React from 'react';
+import Link from 'next/link';
 import styled from 'styled-components';
 
 const ConnectButton = () => {
   return (
     <StyledWrapper>
-      <button className="button">
+      <Link href="#contact">
+      <button href="contact" className="button">
         <div className="outline" />
         <div className="state state--default">
           <div className="icon">
@@ -53,6 +55,7 @@ const ConnectButton = () => {
           </p>
         </div>
       </button>
+      </Link>
     </StyledWrapper>
   );
 }

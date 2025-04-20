@@ -16,89 +16,25 @@ const Footer = () => {
   // Navigation links from Navbar
   const navLinks = [
     { name: "🚀 Launchpad", href: "#home" },
-    { name: "🤝 Who I Am", href: "#intro" },
+    { name: "👤 Who I Am", href: "#intro" },
+    { name: "✈️ My Journey", href: "#Journey" },
+    { name: "💪 Core Strengths", href: "#strengths" },
     { name: "💻 Skills", href: "#skills" },
     { name: "💼 My Builds", href: "#projects" },
+    { name: "📈 Work", href: "#work" },
     { name: "✍️ Insights", href: "#blogs" },
-    { name: "🤝 Meet the Team", href: "#myteam" }
+    { name: "🤝 Meet the Team", href: "#myteam" },
+    { name: "💬 Get in Touch", href: "#contact" },
   ];
 
   // Social media links
   const socialLinks = [
-    { name: "LinkedIn", icon: <FaLinkedinIn className="w-5 h-5" />, url: "https://www.linkedin.com/in/anugrah-singh-7777/" },
-    { name: "GitHub", icon: <FaGithub className="w-5 h-5" />, url: "https://github.com/anugrahsingh7777" },
+    { name: "LinkedIn", icon: <FaLinkedinIn className="w-5 h-5" />, url: "https://www.linkedin.com/in/anugrah-singh-161089266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" },
+    { name: "GitHub", icon: <FaGithub className="w-5 h-5" />, url: "https://github.com/anugrahsingh7" },
     { name: "Email", icon: <MdEmail className="w-5 h-5" />, url: "mailto:anugrahsingh7777@gmail.com" }
   ];
   
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    
-    // Main footer animation
-    gsap.fromTo(
-      footerRef.current,
-      { backgroundColor: 'rgba(0,0,0,0)', y: 50, opacity: 0 },
-      { 
-        backgroundColor: 'black', 
-        y: 0, 
-        opacity: 1, 
-        duration: 1, 
-        ease: 'power3.out',
-        scrollTrigger: {
-          trigger: footerRef.current,
-          start: 'top bottom',
-          end: 'top center',
-          scrub: 1
-        }
-      }
-    );
-
-    // Content fade in
-    gsap.fromTo(
-      contentRef.current,
-      { y: 30, opacity: 0 },
-      { 
-        y: 0, 
-        opacity: 1, 
-        duration: 0.8,
-        scrollTrigger: {
-          trigger: contentRef.current,
-          start: 'top bottom-=50',
-          toggleActions: 'play none none reverse'
-        }
-      }
-    );
-
-    // Divider animation
-    gsap.fromTo(
-      dividerRef.current,
-      { width: '0%' },
-      { 
-        width: '100%', 
-        duration: 1.2, 
-        ease: 'power2.inOut',
-        scrollTrigger: {
-          trigger: dividerRef.current,
-          start: 'top bottom-=30',
-          toggleActions: 'play none none reverse'
-        }
-      }
-    );
-
-    // Copyright text animation
-    gsap.fromTo(
-      copyrightRef.current,
-      { opacity: 0 },
-      { 
-        opacity: 1, 
-        duration: 0.8,
-        scrollTrigger: {
-          trigger: dividerRef.current,
-          start: 'top bottom-=20',
-          toggleActions: 'play none none reverse'
-        }
-      }
-    );
-  }, []);
+  
 
   return (
     <footer ref={footerRef} className="bg-black text-[#ffe5d5] relative ">
@@ -116,8 +52,8 @@ const Footer = () => {
           <div className="flex flex-col">
             <Link href="#home" className="group inline-block mb-5 w-fit">
               <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 bg-red-400/20 rounded-md flex items-center justify-center">
-                  <span className="text-red-400 font-bold text-xl">A</span>
+                <div className="w-10 h-10 rounded-md flex items-center justify-center overflow-hidden">
+                  <img src="/logo.png" alt="logo" className="w-full h-full object-contain " />
                 </div>
                 <span className="text-red-400/90 font-semibold tracking-wide text-lg">
                   Anugrah Singh

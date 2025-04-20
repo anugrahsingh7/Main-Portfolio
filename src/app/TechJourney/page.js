@@ -4,7 +4,7 @@ const anton = Anton({ subsets: ["latin"], weight: ["400"] });
 
 function TechJourney() {
   return (
-    <div className="relative flex flex-col items-center justify-center h-screen text-red-400 bg-red-400">
+    <div id="Journey" className="relative flex flex-col items-center justify-center h-screen text-red-400 bg-red-400">
       <div className="w-screen h-screen flex flex-col p-6">
         <div className="flex justify-start items-end px-7">
           <h1 className={`${anton.className} text-black text-[14rem] font-bold mt-10`}>My</h1>

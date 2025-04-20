@@ -1,8 +1,9 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Anton, Great_Vibes } from "next/font/google";
 import styled from "styled-components";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Navbar from "@/components/Navbar";
 import Loader from "@/components/Loader";
 import Footer from "@/components/Footer";
@@ -18,17 +19,24 @@ import Work from "./Work/page";
 import WorkTogether from "./WorkTogether/page";
 import MoreProjects from "./MoreProjects/page";
 import Blogs from "./Blogs/page";
-import Contact from "./Contact/page";
 import MyTeamHeading from "./MyTeamHeading/Page";
 import MyTeam from "./MyTeam/page";
+import GetInTouch from "./GetInTouch/page";
+
 
 // Move the font loader outside the component
 const anton = Anton({ subsets: ["latin"], weight: ["400"] });
 const greatVibes = Great_Vibes({ subsets: ["latin"], weight: ["400"] });
 
+// Register ScrollTrigger plugin
+if (typeof window !== 'undefined') {
+  gsap.registerPlugin(ScrollTrigger);
+}
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
+  const mainTimelineRef = useRef(null);
+  const sectionsRef = useRef([]);
 
   // Define an image for each letter (update the URLs to your images)
   const letterImages = [
@@ -50,6 +58,10 @@ export default function Home() {
 
   useEffect(() => {
     if (!loading) {
+      // Initialize the main timeline
+      mainTimelineRef.current = gsap.timeline();
+      
+      // Main intro animation sequence
       gsap.fromTo(
         ".letter-container",
         { opacity: 0, y: 50, rotation: -15, scale: 0.5 },
@@ -63,6 +75,113 @@ export default function Home() {
           ease: "elastic.out(1, 0.5)",
         }
       );
+
+      // Set up scroll-based animations
+      const sections = document.querySelectorAll('main > div, section');
+      sectionsRef.current = sections;
+      
+      sections.forEach((section, index) => {
+        if (index === 0) return; // Skip first section (hero)
+        
+        // Create animation for each section
+        gsap.fromTo(section, 
+          { 
+            y: 100, 
+            opacity: 0,
+          },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 1,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: section,
+              start: "top 80%",
+              end: "top 50%",
+              toggleActions: "play none none reverse",
+            }
+          }
+        );
+        
+        // Add additional animations for elements within sections
+        const headings = section.querySelectorAll('h1, h2, h3');
+        const paragraphs = section.querySelectorAll('p');
+        const buttons = section.querySelectorAll('button');
+        const images = section.querySelectorAll('img');
+        
+        gsap.fromTo(headings, 
+          { x: -50, opacity: 0 },
+          { 
+            x: 0, 
+            opacity: 1, 
+            duration: 0.6, 
+            stagger: 0.2,
+            ease: "back.out(1.7)",
+            scrollTrigger: {
+              trigger: section,
+              start: "top 75%",
+              toggleActions: "play none none reverse",
+            }
+          }
+        );
+        
+        gsap.fromTo(paragraphs, 
+          { y: 30, opacity: 0 },
+          { 
+            y: 0, 
+            opacity: 1, 
+            duration: 0.8, 
+            stagger: 0.1,
+            delay: 0.3,
+            scrollTrigger: {
+              trigger: section,
+              start: "top 75%",
+              toggleActions: "play none none reverse",
+            }
+          }
+        );
+
+        gsap.fromTo(buttons, 
+          { scale: 0.8, opacity: 0 },
+          { 
+            scale: 1, 
+            opacity: 1, 
+            duration: 0.5, 
+            stagger: 0.1,
+            delay: 0.5,
+            ease: "elastic.out(1, 0.5)",
+            scrollTrigger: {
+              trigger: section,
+              start: "top 75%",
+              toggleActions: "play none none reverse",
+            }
+          }
+        );
+
+        gsap.fromTo(images, 
+          { rotation: -5, scale: 0.9, opacity: 0 },
+          { 
+            rotation: 0, 
+            scale: 1, 
+            opacity: 1, 
+            duration: 0.8, 
+            stagger: 0.2,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: section,
+              start: "top 75%",
+              toggleActions: "play none none reverse",
+            }
+          }
+        );
+      });
+      
+      // Clean up ScrollTrigger on component unmount
+      return () => {
+        if (ScrollTrigger) {
+          ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+        }
+      };
     }
   }, [loading]);
 
@@ -105,9 +224,10 @@ export default function Home() {
         <>
           <Navbar />
           <main>
+            
             <div className="w-full h-screen bg-transparent flex flex-col justify-center items-center p-4">
               <div
-                className={`${anton.className} w-full scale-y-[1.3] cursor-default justify-center h-[75%] flex items-end text-[21.5rem] font-extrabold opacity-95 relative`}
+                className={`${anton.className} w-full -mt-10 scale-y-[1.3] cursor-default justify-center h-[75%] flex items-end text-[21.5rem] font-extrabold opacity-95 relative`}
               >
                 {"ANUGRAH".split("").map((letter, index) => (
                   <span
@@ -171,7 +291,7 @@ export default function Home() {
             </div>
           </main>
           
-          {/* About section */}
+          
           
           
           
@@ -188,19 +308,13 @@ export default function Home() {
           <WorkHeading/>
           <Work/>
           <WorkTogether/>
-          
-          
           <Blogs/>
           <MyTeamHeading/>
           <MyTeam/>
-          <Contact/>
-         
-
-
-
-        
-
-         <Footer/> 
+          <GetInTouch/>
+               
+          
+          <Footer/> 
           
           
         </>

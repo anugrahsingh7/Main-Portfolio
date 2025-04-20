@@ -1,6 +1,10 @@
 // components/Loader.js
 "use client";
 import React, { useState, useRef } from "react";
+import { Anton } from "next/font/google";
+
+const anton = Anton({ subsets: ["latin"], weight: ["400"] });
+
 
 const Loader = () => {
   const [progress, setProgress] = useState(0);
@@ -30,7 +34,7 @@ const Loader = () => {
         </video>
       </div>
       <div className="w-full min-h-[20%] flex justify-between bg-black">
-        <div className="min-w-[33.33%] min-h-full flex justify-start items-end p-8 text-xl font-thin text-white italic opacity-80">
+        <div className={`${anton.className} min-w-[33.33%] min-h-full flex justify-start items-end p-8 text-xl font-thin text-white italic opacity-80`}>
           Anugrah Singh
         </div>
         <div className="min-w-[33.33%] w-full min-h-full flex justify-center items-end p-8">
@@ -48,9 +52,9 @@ const Loader = () => {
               className="absolute top-0 left-0 h-full rounded-lg transition-all duration-200"
               style={{ width: `${progress}%` }}
             ></div>
-            <div className="min-w-[33.33%] absolute inset-0 flex justify-end items-end opacity-80 justify-center font-semibold text-white p-8">
-              <span className="text-xl font-thin me-1 italic">LOADING</span>
-              <span className="text-2xl font-bold italic">{progress}</span>
+            <div className={`${anton.className}   min-w-[33.33%] absolute inset-0 flex justify-end items-end opacity-80 justify-center font-semibold text-white p-8`}>
+              <span className="text-xl font-thin me-1 ">LOADING</span>
+              <span className="text-4xl font-bold">{progress}</span>
               <span className="text-md ms-1 font-thin">%</span>
             </div>
           </div>

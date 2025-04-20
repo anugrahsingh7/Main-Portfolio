@@ -87,7 +87,7 @@ function MyTeam() {
       container.addEventListener('scroll', handleScroll);
       
       // Block mouse wheel scrolling
-      container.addEventListener('wheel', preventScroll, { passive: false });
+      // container.addEventListener('wheel', preventScroll, { passive: false });
       
       return () => {
         container.removeEventListener('scroll', handleScroll);
@@ -161,13 +161,13 @@ function MyTeam() {
         <p className="mb-6 text-center max-w-md text-white/90 text-lg leading-relaxed font-light hover:text-white transition-all duration-300 drop-shadow-[0_1px_1px_rgba(0,0,0,0.9)]">I'm a passionate web developer with hands-on experience in modern technologies like GSAP, Locomotive Scroll, Lenis, Spline, Framer Motion, and Three.js. I specialize in creating smooth, interactive, and visually captivating user experiences using React, Next.js, and MongoDB.</p>
         
         <div className="flex gap-4 mb-8">
-          <button onClick={() => openLink('https://github.com/anugrahsinghy')} className="bg-red-400/30 p-3 rounded-full hover:bg-red-400 hover:scale-110 transition-all duration-300 shadow-[0_4px_6px_rgba(0,0,0,0.3)] hover:shadow-[0_6px_8px_rgba(0,0,0,0.5)]">
+          <button onClick={() => openLink('https://github.com/anugrahsingh7')} className="bg-red-400/30 cursor-pointer p-3 rounded-full hover:bg-red-400 hover:scale-110 transition-all duration-300 shadow-[0_4px_6px_rgba(0,0,0,0.3)] hover:shadow-[0_6px_8px_rgba(0,0,0,0.5)]">
             <FaGithub className="text-2xl" />
           </button>
-          <button onClick={() => openLink('https://linkedin.com/in/anugrahsingh')} className="bg-red-400/30 p-3 rounded-full hover:bg-red-400 hover:scale-110 transition-all duration-300 shadow-[0_4px_6px_rgba(0,0,0,0.3)] hover:shadow-[0_6px_8px_rgba(0,0,0,0.5)]">
+          <button onClick={() => openLink('https://www.linkedin.com/in/anugrah-singh-7777/')} className="bg-red-400/30 cursor-pointer p-3 rounded-full hover:bg-red-400 hover:scale-110 transition-all duration-300 shadow-[0_4px_6px_rgba(0,0,0,0.3)] hover:shadow-[0_6px_8px_rgba(0,0,0,0.5)]">
             <FaLinkedin className="text-2xl" />
           </button>
-          <button onClick={() => openLink('mailto:anugrah@example.com')} className="bg-red-400/30 p-3 rounded-full hover:bg-red-400 hover:scale-110 transition-all duration-300 shadow-[0_4px_6px_rgba(0,0,0,0.3)] hover:shadow-[0_6px_8px_rgba(0,0,0,0.5)]">
+          <button onClick={() => openLink('mailto:anugrahsingh7777@gmail.com')} className="bg-red-400/30 cursor-pointer p-3 rounded-full hover:bg-red-400 hover:scale-110 transition-all duration-300 shadow-[0_4px_6px_rgba(0,0,0,0.3)] hover:shadow-[0_6px_8px_rgba(0,0,0,0.5)]">
             <FaEnvelope className="text-2xl" />
           </button>
         </div>
@@ -188,18 +188,18 @@ function MyTeam() {
         <p className="mb-6 text-center max-w-md text-white/90 text-lg leading-relaxed font-light hover:text-white transition-all duration-300 drop-shadow-[0_1px_1px_rgba(0,0,0,0.9)]">Vaibhav is a proficient Full Stack Developer with deep expertise in React, Next.js, Express, Node.js, and MongoDB. With a solid foundation in Computer Science, he excels at building innovative, scalable solutions and driving technical excellence across the stack.</p>
         
         <div className="flex gap-4 mb-8">
-          <button onClick={() => openLink('https://github.com/vaibhavsinha')} className="bg-red-400/30 p-3 rounded-full hover:bg-red-400 hover:scale-110 transition-all duration-300 shadow-[0_4px_6px_rgba(0,0,0,0.3)] hover:shadow-[0_6px_8px_rgba(0,0,0,0.5)]">
+          <button onClick={() => openLink('https://github.com/VaibhavSinha25')} className="bg-red-400/30 cursor-pointer p-3 rounded-full hover:bg-red-400 hover:scale-110 transition-all duration-300 shadow-[0_4px_6px_rgba(0,0,0,0.3)] hover:shadow-[0_6px_8px_rgba(0,0,0,0.5)]">
             <FaGithub className="text-2xl" />
           </button>
-          <button onClick={() => openLink('https://linkedin.com/in/vaibhavsinha')} className="bg-red-400/30 p-3 rounded-full hover:bg-red-400 hover:scale-110 transition-all duration-300 shadow-[0_4px_6px_rgba(0,0,0,0.3)] hover:shadow-[0_6px_8px_rgba(0,0,0,0.5)]">
+          <button onClick={() => openLink('https://www.linkedin.com/in/-vaibhav-sinha')} className="bg-red-400/30 cursor-pointer p-3 rounded-full hover:bg-red-400 hover:scale-110 transition-all duration-300 shadow-[0_4px_6px_rgba(0,0,0,0.3)] hover:shadow-[0_6px_8px_rgba(0,0,0,0.5)]">
             <FaLinkedin className="text-2xl" />
           </button>
-          <button onClick={() => openLink('mailto:vaibhav@example.com')} className="bg-red-400/30 p-3 rounded-full hover:bg-red-400 hover:scale-110 transition-all duration-300 shadow-[0_4px_6px_rgba(0,0,0,0.3)] hover:shadow-[0_6px_8px_rgba(0,0,0,0.5)]">
+          <button onClick={() => openLink('mailto:vaibhavsinha0825@gmail.com')} className="bg-red-400/30 cursor-pointer p-3 rounded-full hover:bg-red-400 hover:scale-110 transition-all duration-300 shadow-[0_4px_6px_rgba(0,0,0,0.3)] hover:shadow-[0_6px_8px_rgba(0,0,0,0.5)]">
             <FaEnvelope className="text-2xl" />
           </button>
         </div>
         
-        <button onClick={() => openLink('https://vaibhavsinha-portfolio.com')} className="bg-red-400 text-white px-8 py-3 rounded-full hover:bg-black/80 transform hover:scale-105 transition-all duration-300 shadow-[0_4px_8px_rgba(0,0,0,0.4)] hover:shadow-[0_6px_12px_rgba(0,0,0,0.6)]">
+        <button onClick={() => openLink(' ')} className="bg-red-400 text-white px-8 py-3 rounded-full hover:bg-black/80 transform hover:scale-105 transition-all duration-300 shadow-[0_4px_8px_rgba(0,0,0,0.4)] hover:shadow-[0_6px_12px_rgba(0,0,0,0.6)]">
           View Portfolio
         </button>
       </div>
@@ -215,18 +215,18 @@ function MyTeam() {
         <p className="mb-6 text-center max-w-md text-white/90 text-lg leading-relaxed font-light hover:text-white transition-all duration-300 drop-shadow-[0_1px_1px_rgba(0,0,0,0.9)]">Sumit is an aspiring software developer with hands-on experience in the MERN stack, he is passionate about building scalable web applications. With a strong foundation in C++, data structures, and algorithms, he enjoy solving complex problems and optimising code efficiency.</p>
         
         <div className="flex gap-4 mb-8">
-          <button onClick={() => openLink('https://github.com/sumitjoshi')} className="bg-red-400/30 p-3 rounded-full hover:bg-red-400 hover:scale-110 transition-all duration-300 shadow-[0_4px_6px_rgba(0,0,0,0.3)] hover:shadow-[0_6px_8px_rgba(0,0,0,0.5)]">
+          <button onClick={() => openLink('https://github.com/josum06')} className="bg-red-400/30 cursor-pointer p-3 rounded-full hover:bg-red-400 hover:scale-110 transition-all duration-300 shadow-[0_4px_6px_rgba(0,0,0,0.3)] hover:shadow-[0_6px_8px_rgba(0,0,0,0.5)]">
             <FaGithub className="text-2xl" />
           </button>
-          <button onClick={() => openLink('https://linkedin.com/in/sumitjoshi')} className="bg-red-400/30 p-3 rounded-full hover:bg-red-400 hover:scale-110 transition-all duration-300 shadow-[0_4px_6px_rgba(0,0,0,0.3)] hover:shadow-[0_6px_8px_rgba(0,0,0,0.5)]">
+          <button onClick={() => openLink('https://www.linkedin.com/in/sumit-joshi-417a91258/')} className="bg-red-400/30 cursor-pointer p-3 rounded-full hover:bg-red-400 hover:scale-110 transition-all duration-300 shadow-[0_4px_6px_rgba(0,0,0,0.3)] hover:shadow-[0_6px_8px_rgba(0,0,0,0.5)]">
             <FaLinkedin className="text-2xl" />
           </button>
-          <button onClick={() => openLink('mailto:sumit@example.com')} className="bg-red-400/30 p-3 rounded-full hover:bg-red-400 hover:scale-110 transition-all duration-300 shadow-[0_4px_6px_rgba(0,0,0,0.3)] hover:shadow-[0_6px_8px_rgba(0,0,0,0.5)]">
+          <button onClick={() => openLink('mailto:sumit.joshi0616@gmail.com')} className="bg-red-400/30 cursor-pointer p-3 rounded-full hover:bg-red-400 hover:scale-110 transition-all duration-300 shadow-[0_4px_6px_rgba(0,0,0,0.3)] hover:shadow-[0_6px_8px_rgba(0,0,0,0.5)]">
             <FaEnvelope className="text-2xl" />
           </button>
         </div>
         
-        <button onClick={() => openLink('https://sumitjoshi-portfolio.com')} className="bg-red-400 text-white px-8 py-3 rounded-full hover:bg-black/80 transform hover:scale-105 transition-all duration-300 shadow-[0_4px_8px_rgba(0,0,0,0.4)] hover:shadow-[0_6px_12px_rgba(0,0,0,0.6)]">
+        <button onClick={() => openLink('  ')} className="bg-red-400 text-white px-8 py-3 rounded-full hover:bg-black/80 transform hover:scale-105 transition-all duration-300 shadow-[0_4px_8px_rgba(0,0,0,0.4)] hover:shadow-[0_6px_12px_rgba(0,0,0,0.6)]">
           View Portfolio
         </button>
       </div>
