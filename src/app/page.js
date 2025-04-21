@@ -40,13 +40,13 @@ export default function Home() {
 
   // Define an image for each letter (update the URLs to your images)
   const letterImages = [
-    "https://i.pinimg.com/736x/4f/f5/6a/4ff56a8053e4ad00c8702df8363e7298.jpg", // For letter A
-    "https://www.jojosposters.com/cdn/shop/products/tazgreenday_web.jpeg?v=1562896647", // For letter N
-    "https://i.redd.it/some-random-wierd-godzilla-movie-posters-that-i-found-in-v0-0lfhmmwkqpvb1.jpg?width=875&format=pjpg&auto=webp&s=e3f1e0bfd9e29bfd3d7f8993f3b653049d20881e", // For letter U
-    "https://www.jojosposters.com/cdn/shop/products/tazallmans_web.jpeg?v=1559261073", // For letter G
-    "https://www.designer-daily.com/wp-content/uploads/2016/02/54-2.jpg", // For letter R
-    "https://i1.wp.com/www.zekagraphic.com/wp-content/uploads/2024/07/0007-Some-Random-Drawings-Poster-Design-by-Zeka-Design-scaled.jpg?fit=1810%2C2560&ssl=1", // For the second A
-    "https://i.pinimg.com/736x/0f/31/af/0f31afd2411b4bf9471a28fd246fcfdc.jpg", // For letter H
+    "/A.jpg", // For letter A
+    "/N.jpg", // For letter N
+    "/U.jpg", // For letter U
+    "/G.jpg", // For letter G
+    "/R.jpg", // For letter R
+    "/2ndA.jpg", // For the second A
+    "/H.jpg", // For letter H
   ];
 
   useEffect(() => {

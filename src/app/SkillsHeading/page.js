@@ -69,17 +69,17 @@ const SkillsHeading = () => {
     return (
         <div ref={containerRef} className="h-screen w-screen bg-black text-white flex justify-center items-center p-2 gap-x-2">
             <div ref={el => letterRefs.current[0] = el} className={`h-screen w-1/6 bg-cover flex justify-center items-center text-[14rem] rounded-sm font-extrabold grayscale hover:grayscale-[0%] transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-2xl hover:shadow-white/20 ${anton.className}`}
-             style={{ backgroundImage: "url('https://wallpapers.com/images/hd/1080x1920-ugd930ckdcujq44s.jpg')" }}>S</div>
+             style={{ backgroundImage: "url('/SS.jpg')" }}>S</div>
             <div ref={el => letterRefs.current[1] = el} className={`h-screen w-1/6 bg-cover flex justify-center items-center text-[14rem] rounded-sm font-extrabold grayscale hover:grayscale-[0%] transition-all duration-500 ease-in-out hover:scale-110 hover:-rotate-3 hover:shadow-2xl hover:shadow-white/20 ${anton.className}`}
-             style={{ backgroundImage: "url('https://wallpapercave.com/wp/wp11911501.jpg')" }}>K</div>
+             style={{ backgroundImage: "url('/KK.jpg')" }}>K</div>
             <div ref={el => letterRefs.current[2] = el} className={`h-screen w-1/6 bg-cover flex justify-center items-center text-[14rem] rounded-sm font-extrabold grayscale hover:grayscale-[0%] transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-2xl hover:shadow-white/20 ${anton.className}`}
-             style={{ backgroundImage: "url('https://img2.wallspic.com/crops/4/0/0/6/7/176004/176004-golden_gate_bridge-art-painting-cloud-water-2628x4668.png')" }}>I</div>
+             style={{ backgroundImage: "url('/II.png')" }}>I</div>
             <div ref={el => letterRefs.current[3] = el} className={`h-screen w-1/6 bg-cover flex justify-center items-center text-[14rem] rounded-sm font-extrabold grayscale hover:grayscale-[0%] transition-all duration-500 ease-in-out hover:scale-110 hover:-rotate-3 hover:shadow-2xl hover:shadow-white/20 ${anton.className}`}
-             style={{ backgroundImage: "url('https://wallpapercave.com/wp/wp5109115.jpg')" }}>L</div>
+             style={{ backgroundImage: "url('/L.jpg')" }}>L</div>
             <div ref={el => letterRefs.current[4] = el} className={`h-screen w-1/6 bg-cover flex justify-center items-center text-[14rem] rounded-sm font-extrabold grayscale hover:grayscale-[0%] transition-all duration-500 ease-in-out hover:scale-110 hover:rotate-3 hover:shadow-2xl hover:shadow-white/20 ${anton.className}`}
-             style={{ backgroundImage: "url('https://wallpapersok.com/images/high/cherry-blossom-tree-anime-japanese-iphone-cyj7pbqwxve74qbt.jpg')" }}>L</div>
+             style={{ backgroundImage: "url('/LL.jpg')" }}>L</div>
             <div ref={el => letterRefs.current[5] = el} className={`h-screen w-1/6 bg-cover flex justify-center items-center text-[14rem] rounded-sm font-extrabold grayscale hover:grayscale-[0%] transition-all duration-500 ease-in-out hover:scale-110 hover:-rotate-3 hover:shadow-2xl hover:shadow-white/20 ${anton.className}`}
-             style={{ backgroundImage: "url('https://wallpapers.com/images/hd/galaxy-and-blue-background-wvpsz67az82dzajc.jpg')" }}>S</div>
+             style={{ backgroundImage: "url('/S.jpg')" }}>S</div>
         </div>
     );
 };

@@ -136,9 +136,9 @@ export default function GetInTouch() {
 
                 <button
                   type="submit"
-                  className={`${anton.className} w-full mt-6 px-6 py-3 text-black border border-black rounded-md hover:bg-black hover:text-white`}
+                  className={`${anton.className} cursor-pointer w-full mt-6 px-6 py-3 text-black border border-black rounded-md hover:bg-black hover:text-white transition-all duration-300 ease-in-out`}
                 >
-                  get in touch
+                  Send Message
                 </button>
 
                 {status && <p className="mt-4 text-black">{status}</p>}
