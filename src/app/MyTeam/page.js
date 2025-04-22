@@ -1,3 +1,4 @@
+'use client'
 import { Anton, Great_Vibes } from "next/font/google";
 import { RiTeamLine } from "react-icons/ri";
 import { useRef, useEffect, useState } from "react";
