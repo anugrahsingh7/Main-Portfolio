@@ -1,3 +1,5 @@
+'use client'
+
 import { useState, useEffect, useRef } from "react";
 import CursorBox from "@/components/CursorBox";
 import { 
