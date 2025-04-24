@@ -1,7 +1,11 @@
-// pages/skills.js
 import { motion } from 'framer-motion';
-import { Code , ScanLine , Hammer , Rocket , LayoutDashboard , GraduationCap } from 'lucide-react';
+import { Code , ScanLineIcon , Hammer , Rocket , LayoutDashboard , GraduationCap } from 'lucide-react';
+
+
 const personalitySkills = [
+
+
+
   {
     title: 'Creative Frontend Developer',
     icon: <Code className="w-8 h-8 text-rose-400" />,
@@ -9,7 +13,7 @@ const personalitySkills = [
   },
   {
     title: 'Detail-Oriented Coder',
-    icon: <ScanLine className="w-8 h-8 text-blue-400" />,
+    icon: <ScanLineIcon className="w-8 h-8 text-blue-400" />,
     description: 'Crafting clean, scalable, and efficient code with a sharp focus on performance and user experience.',
   },
   {
