@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"; 
-import { FiBell, FiUser, FiSettings } from "react-icons/fi";
+
 import { PiNotchesBold } from "react-icons/pi";
 import { IoClose } from "react-icons/io5"; 
 import { MdEmail } from "react-icons/md";
@@ -11,8 +11,7 @@ import styled from 'styled-components';
 import { FaArrowRightLong } from "react-icons/fa6"; 
 import { Anton } from "next/font/google";
 import Link from 'next/link';
-import { MdOutlineWork } from "react-icons/md";
-import { MdContacts } from "react-icons/md";
+
 
 
 
