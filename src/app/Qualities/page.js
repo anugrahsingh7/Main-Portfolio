@@ -1,6 +1,10 @@
 import { motion } from 'framer-motion';
-import { Code, ScanLine, Hammer, Rocket, LayoutDashboard, GraduationCap } from 'lucide-react';
-
+import { FaCode  } from "react-icons/fa";
+import { LuScanBarcode } from "react-icons/lu";
+import { FaHammer } from "react-icons/fa";
+import { FaRocket } from "react-icons/fa";
+import { LuLayoutDashboard } from "react-icons/lu";
+import { FaGraduationCap } from "react-icons/fa";
 
 
 const personalitySkills = [
@@ -9,32 +13,32 @@ const personalitySkills = [
 
   {
     title: 'Creative Frontend Developer',
-    icon: <Code className="w-8 h-8 text-rose-400" />,
+    icon: <FaCode className="text-3xl text-rose-400 " />,
     description: 'Bringing vibrant ideas to life with responsive and intuitive interfaces, blending creativity with functionality.',
   },
   {
     title: 'Detail-Oriented Coder',
-    icon: <ScanLine className="w-8 h-8 text-blue-400" />,
+    icon: <LuScanBarcode className='text-3xl text-blue-400' />,
     description: 'Crafting clean, scalable, and efficient code with a sharp focus on performance and user experience.',
   },
   {
     title: 'Real-World Problem Solver',
-    icon: <Hammer className="w-8 h-8 text-green-500" />,
+    icon: <FaHammer className="text-3xl text-green-500" />,
     description: 'Building impactful tech solutions that solve genuine problems, from college canteens to collaborative music apps.',
   },
   {
     title: 'Next.js Enthusiast',
-    icon: <Rocket className="w-8 h-8 text-indigo-400" />,
+    icon: <FaRocket  className="text-3xl text-indigo-400" />,
     description: 'Leveraging modern frameworks and tools to build fast, dynamic, and production-ready web applications.',
   },
   {
     title: 'UI/UX Perfectionist',
-    icon: <LayoutDashboard className="w-8 h-8 text-purple-400" />,
+    icon: <LuLayoutDashboard className="text-3xl text-purple-400" />,
     description: 'Designing sleek, mobile-friendly experiences that feel as good as they look — no scroll bars, just smooth flow.',
   },
   {
     title: 'Relentless Learner',
-    icon: <GraduationCap className="w-8 h-8 text-yellow-400" />,
+    icon: <FaGraduationCap className="text-3xl text-yellow-400" />,
     description: 'From mastering DSA to diving into AI/ML and preparing for IES, I’m always leveling up my tech and career game.',
   }
   
