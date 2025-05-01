@@ -1,3 +1,5 @@
+"use client"
+
 import { motion } from 'framer-motion';
 import { FaCode  } from "react-icons/fa";
 import { LuScanBarcode } from "react-icons/lu";
