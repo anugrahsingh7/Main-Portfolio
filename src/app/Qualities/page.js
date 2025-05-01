@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { Code , ScanLineIcon , Hammer , Rocket , LayoutDashboard , GraduationCap } from 'lucide-react';
+import { Code, ScanLine, Hammer, Rocket, LayoutDashboard, GraduationCap } from 'lucide-react';
+
 
 
 const personalitySkills = [
@@ -13,7 +14,7 @@ const personalitySkills = [
   },
   {
     title: 'Detail-Oriented Coder',
-    icon: <ScanLineIcon className="w-8 h-8 text-blue-400" />,
+    icon: <ScanLine className="w-8 h-8 text-blue-400" />,
     description: 'Crafting clean, scalable, and efficient code with a sharp focus on performance and user experience.',
   },
   {
