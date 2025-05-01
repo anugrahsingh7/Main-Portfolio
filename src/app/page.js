@@ -9,7 +9,7 @@ import Loader from "@/components/Loader";
 import Footer from "@/components/Footer";
 import Intro from "./Intro/page";
 import TechJourney from "./TechJourney/page";
-import Qualities from "./Qualities/page";
+
 import SkillsHeading from "./SkillsHeading/page";
 import Skills from "./Skills/page";
 import ProjectHeading from "./ProjectHeading/page";
@@ -22,6 +22,7 @@ import Blogs from "./Blogs/page";
 import MyTeamHeading from "./MyTeamHeading/Page";
 import MyTeam from "./MyTeam/page";
 import GetInTouch from "./GetInTouch/page";
+import Qualities2 from "./Qualities2/page";
 
 
 // Move the font loader outside the component
@@ -299,7 +300,7 @@ export default function Home() {
           
           <Intro />
           <TechJourney/>
-          <Qualities/>
+          <Qualities2/>
           <SkillsHeading/>
           <Skills/>
           <ProjectHeading/>

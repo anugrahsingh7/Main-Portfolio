@@ -6,7 +6,6 @@ import { FaRocket } from "react-icons/fa";
 import { LuLayoutDashboard } from "react-icons/lu";
 import { FaGraduationCap } from "react-icons/fa";
 
-
 const personalitySkills = [
 
 
