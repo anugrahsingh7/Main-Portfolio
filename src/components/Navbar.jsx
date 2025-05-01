@@ -30,7 +30,7 @@ const Navbar = () => {
       <div className="container mx-auto px-0 py-3 flex items-center justify-between">
         
         {/* Company Name */}
-        <div className="text-lg font-bold -ms-14"><img className="w-10 h-10" src="Anugrah singh logo-modified (1).png" alt="logo" />
+        <div className="text-lg font-bold -ms-14">
         
         </div>
 
