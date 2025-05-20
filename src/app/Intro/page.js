@@ -30,69 +30,86 @@ const Intro = () => {
   
   return (
     <div id="intro" className={`h-screen w-screen bg-black ${yellowtail.className}`}>
-      <div className="fixed top-0 left-0 text-white">
-        {/* Empty fixed div - consider removing if unused */}
-      </div>
+  <div className="fixed top-0 left-0 text-white">
+    {/* Empty fixed div - consider removing if unused */}
+  </div>
 
-      <div className="w-screen h-[80%] p-5 flex justify-center items-center">
-        <div className="p-18">
-          <div className="h-30 flex items-start justify-between">
-            <div className="flex items-center w-full justify-between">
-              <GiNinjaStar className="text-red-500 text-2xl" />
-              <hr className="bg-[#ffe5d5] w-[90%] h-[0.1rem]"/>
-              <GiNinjaStar className="text-red-500 text-2xl" />
+  <div className="w-screen h-[80%] p-5 flex justify-center items-center">
+    <div className="p-4 md:p-8 lg:p-18">
+      <div className="h-30 flex items-start justify-between">
+        <div className="flex items-center w-full justify-between">
+          <GiNinjaStar className="text-red-500 text-xl sm:text-2xl md:text-3xl lg:text-4xl" />
+          <hr className="bg-[#ffe5d5] w-[85%] sm:w-[90%] h-[0.1rem]" />
+          <GiNinjaStar className="text-red-500 text-xl sm:text-2xl md:text-3xl lg:text-4xl" />
+        </div>
+      </div>
+      <p 
+        ref={paragraphRef} 
+        className="text-[#ffe5d5] text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-normal opacity-90 z-10 leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed 2xl:leading-relaxed"
+      >
+        Hi, I'm a Computer Science student with a passion for
+        technology and problem-solving. I am always eager to learn and
+        explore new areas in the tech world, building a strong foundation
+        for my future career while working on innovative solutions.
+      </p>
+    </div>
+  </div>
+
+  <div className="w-screen h-[20%] flex flex-col lg:flex-row">
+    <div className="w-full lg:w-[60%] h-full flex justify-center items-center">
+      
+    </div>
+
+    <div className="w-full lg:w-[50%] h-full flex justify-center items-center">
+      <StyledWrapper>
+        <div className="card -mt-14 -ms-56">
+          <div className="loader">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">~ Anugrah,</p>
+            <div className="words">
+              <span className="word text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">the Innovative Developer 💻</span>
+              <span className="word text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">the Ambitious Learner 📚</span>
+              <span className="word text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">the Determined Engineer ⚙️</span>
+              <span className="word text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">the Visionary Creator 🚀</span>
+              <span className="word text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">the Analytical Thinker 🧠</span>
             </div>
           </div>
-          <p 
-            ref={paragraphRef} 
-            className="text-[#ffe5d5] text-6xl font-normal opacity-90 z-10"
-          >
-            Hi, I'm a Computer Science student with a passion for
-            technology and problem-solving. I am always eager to learn and
-            explore new areas in the tech world, building a strong foundation
-            for my future career while working on innovative solutions.
-          </p>
         </div>
-      </div>
-
-      <div className="w-screen h-[20%] flex">
-        <div className="w-[60%] h-full">hello</div>
-
-        <div className="w-[40%] h-full">
-          <StyledWrapper>
-            <div className="card -mt-20 -ms-56">
-              <div className="loader">
-                <p>~ Anugrah,</p>
-                <div className="words">
-                  <span className="word">the Innovative Developer 💻</span>
-                  <span className="word">the Ambitious Learner 📚</span>
-                  <span className="word">the Determined Engineer ⚙️</span>
-                  <span className="word">the Visionary Creator 🚀</span>
-                  <span className="word">the Analytical Thinker 🧠</span>
-                </div>
-              </div>
-            </div>
-          </StyledWrapper>
-        </div>
-      </div>
+      </StyledWrapper>
     </div>
+  </div>
+</div>
+
   );
 };
 
 const StyledWrapper = styled.div`
   .card {
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
+    @media (min-width: 640px) {
+      padding: 0.75rem 1.5rem;
+    }
+    @media (min-width: 1024px) {
+      padding: 1rem 2rem;
+    }
     border-radius: 1.25rem;
   }
   .loader {
     color: rgb(124, 124, 124);
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    font-size: 35px;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
-    height: 40px;
-    padding: 10px 10px;
+    height: 30px;
+    @media (min-width: 640px) {
+      height: 35px;
+    }
+    @media (min-width: 1024px) {
+      height: 40px;
+    }
+    padding: 8px 8px;
+    @media (min-width: 640px) {
+      padding: 10px 10px;
+    }
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -119,7 +136,10 @@ const StyledWrapper = styled.div`
   .word {
     display: block;
     height: 115%;
-    padding-left: 6px;
+    padding-left: 4px;
+    @media (min-width: 640px) {
+      padding-left: 6px;
+    }
     color: #ff6467;
     animation: spin_4991 4s infinite;
   }

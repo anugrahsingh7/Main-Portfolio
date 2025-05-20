@@ -123,7 +123,7 @@ const Projects = () => {
             {/* Heading with logo overlay */}
             <div className="relative">
               <h2 
-                className={`${anton.className} text-[15rem] opacity-95 font-bold relative z-0 transition-colors duration-500 ${hoveredSection === 1 ? 'text-[#502214]' : 'text-white'}`}
+                className={`${anton.className} text-[8rem] sm:text-[10rem] md:text-[12rem] lg:text-[15rem] opacity-95 font-bold relative z-0 transition-colors duration-500 ${hoveredSection === 1 ? 'text-[#502214]' : 'text-white'}`}
               >
                 CANTEEN
               </h2>
@@ -133,7 +133,7 @@ const Projects = () => {
                 <a 
                   target='_blank'
                   href="https://bpitcanteen.vercel.app/snacks" 
-                  className="cursor-pointer w-40 h-40 rounded-full flex items-center justify-center shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+                  className="cursor-pointer w-32 h-32 sm:w-40 sm:h-40 rounded-full flex items-center justify-center shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
                   onMouseEnter={() => setHoveredSection(1)}
                   onMouseLeave={() => setHoveredSection(null)}
                 >
@@ -148,7 +148,7 @@ const Projects = () => {
             
             {/* Subheading */}
             <p 
-              className={`${anton.className} text-[2.87rem] -mt-[4rem] opacity-95 transition-colors duration-500 ${hoveredSection === 1 ? 'text-[#502214]' : 'text-white'}`}
+              className={`${anton.className} text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[2.87rem] -mt-[2rem] sm:-mt-[3rem] md:-mt-[4rem] opacity-95 transition-colors duration-500 ${hoveredSection === 1 ? 'text-[#502214]' : 'text-white'}`}
             >
               A Food Ordering Website For College
             </p>
@@ -174,7 +174,7 @@ const Projects = () => {
             {/* Heading with logo overlay */}
             <div className="relative">
               <h2 
-                className={`${anton.className} text-[15rem] opacity-95 font-bold relative z-0 transition-colors duration-500 ${hoveredSection === 2 ? 'text-[#853fcb]' : 'text-white'}`}
+                className={`${anton.className} text-[8rem] sm:text-[10rem] md:text-[12rem] lg:text-[15rem] opacity-95 font-bold relative z-0 transition-colors duration-500 ${hoveredSection === 2 ? 'text-[#853fcb]' : 'text-white'}`}
               >
                 ALGOHIRE
               </h2>
@@ -184,7 +184,7 @@ const Projects = () => {
                 <a 
                 target='_blank'
                   href="https://github.com/anugrahsingh7/AlgoHire" 
-                  className="cursor-pointer w-40 h-40 rounded-full flex items-center justify-center shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+                  className="cursor-pointer w-32 h-32 sm:w-40 sm:h-40 rounded-full flex items-center justify-center shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
                   onMouseEnter={() => setHoveredSection(2)}
                   onMouseLeave={() => setHoveredSection(null)}
                 >
@@ -199,7 +199,7 @@ const Projects = () => {
             
             {/* Subheading */}
             <p 
-              className={`${anton.className} text-[2rem] -mt-[4rem] opacity-95 transition-colors duration-500 ${hoveredSection === 2 ? 'text-[#fd4daf]' : 'text-white'}`}
+              className={`${anton.className} text-[1.5rem] sm:text-[2rem] opacity-95 transition-colors duration-500 ${hoveredSection === 2 ? 'text-[#fd4daf]' : 'text-white'}`}
             >
               AlgoHire is an AI-powered developer hiring platform
             </p>
@@ -225,7 +225,7 @@ const Projects = () => {
             {/* Heading with logo overlay */}
             <div className="relative">
               <h2 
-                className={`${anton.className} text-[8rem] opacity-95 font-bold relative z-0 transition-colors duration-500 ${hoveredSection === 3 ? 'text-[#aa2c28]' : 'text-white'}`}
+                className={`${anton.className} text-[6rem] sm:text-[7rem] md:text-[8rem] opacity-95 font-bold relative z-0 transition-colors duration-500 ${hoveredSection === 3 ? 'text-[#aa2c28]' : 'text-white'}`}
               >
                 HEADLINE HUB
               </h2>
@@ -236,7 +236,7 @@ const Projects = () => {
                  target='_blank'
                 
                   href="https://66ef5bd9ef2bafe77823fa40--ubiquitous-gelato-431c34.netlify.app/#" 
-                  className="cursor-pointer w-40 h-40 rounded-full flex items-center justify-center shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+                  className="cursor-pointer w-32 h-32 sm:w-40 sm:h-40 rounded-full flex items-center justify-center shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
                   onMouseEnter={() => setHoveredSection(3)}
                   onMouseLeave={() => setHoveredSection(null)}
                 >
@@ -251,7 +251,7 @@ const Projects = () => {
             
             {/* Subheading */}
             <p 
-              className={`${anton.className} text-[3rem] -mt-[2rem] opacity-95 transition-colors duration-500 ${hoveredSection === 3 ? 'text-[#aa2c28]' : 'text-white'}`}
+              className={`${anton.className} text-[1.5rem] sm:text-[2rem] md:text-[3rem] -mt-[1rem] sm:-mt-[2rem] opacity-95 transition-colors duration-500 ${hoveredSection === 3 ? 'text-[#aa2c28]' : 'text-white'}`}
             >
               Where every headlines connects
             </p>
@@ -277,7 +277,7 @@ const Projects = () => {
             {/* Heading with logo overlay */}
             <div className="relative">
               <h2 
-                className={`${anton.className} text-[15rem] opacity-95 font-bold relative z-0 transition-colors duration-500 ${hoveredSection === 4 ? 'text-white' : 'text-white'}`}
+                className={`${anton.className} text-[8rem] sm:text-[10rem] md:text-[12rem] lg:text-[15rem] opacity-95 font-bold relative z-0 transition-colors duration-500 ${hoveredSection === 4 ? 'text-white' : 'text-white'}`}
               >
                 X.COM
               </h2>
@@ -287,7 +287,7 @@ const Projects = () => {
                 <a 
                 target='_blank'
                   href="https://66c1e25e2e797777e1e44d72--timely-taffy-d9056a.netlify.app/" 
-                  className="cursor-pointer w-40 h-40 rounded-full flex p-5 bg-black items-center justify-center shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+                  className="cursor-pointer w-32 h-32 sm:w-40 sm:h-40 rounded-full flex p-4 sm:p-5 bg-black items-center justify-center shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
                   onMouseEnter={() => setHoveredSection(4)}
                   onMouseLeave={() => setHoveredSection(null)}
                 >
@@ -302,7 +302,7 @@ const Projects = () => {
             
             {/* Subheading */}
             <p 
-              className={`${anton.className} text-[3rem] -mt-[4rem] opacity-95 transition-colors duration-500 ${hoveredSection === 4 ? 'text-white' : 'text-white'}`}
+              className={`${anton.className} text-[1.5rem] sm:text-[2rem] md:text-[3rem] -mt-[2rem] sm:-mt-[3rem] md:-mt-[4rem] opacity-95 transition-colors duration-500 ${hoveredSection === 4 ? 'text-white' : 'text-white'}`}
             >
             A x.com clone using Tailwind Css
             </p>
@@ -328,7 +328,7 @@ const Projects = () => {
             {/* Heading with logo overlay */}
             <div className="relative">
               <h2 
-                className={`${anton.className} text-[13rem] opacity-95 font-bold relative z-0 transition-colors duration-500 ${hoveredSection === 5 ? 'text-[#9b00e5]' : 'text-white'}`}
+                className={`${anton.className} text-[7rem] sm:text-[9rem] md:text-[11rem] lg:text-[13rem] opacity-95 font-bold relative z-0 transition-colors duration-500 ${hoveredSection === 5 ? 'text-[#9b00e5]' : 'text-white'}`}
               >
                 MELODEX
               </h2>
@@ -338,7 +338,7 @@ const Projects = () => {
                 <a 
                 target='_blank'
                   href="https://glittering-alpaca-ec7fc6.netlify.app/" 
-                  className="cursor-pointer w-40 h-40 rounded-full flex p-5 bg-black items-center justify-center shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+                  className="cursor-pointer w-32 h-32 sm:w-40 sm:h-40 rounded-full flex p-4 sm:p-5 bg-black items-center justify-center shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
                   onMouseEnter={() => setHoveredSection(5)}
                   onMouseLeave={() => setHoveredSection(null)}
                 >
@@ -353,16 +353,13 @@ const Projects = () => {
             
             {/* Subheading */}
             <p 
-              className={`${anton.className} text-[3.2rem] -mt-[4rem] opacity-95 transition-colors duration-500 ${hoveredSection === 5 ? 'text-[#9b00e5]' : 'text-white'}`}
+              className={`${anton.className} text-[1.8rem] sm:text-[2.5rem] md:text-[3.2rem] -mt-[2rem] sm:-mt-[3rem] md:-mt-[4rem] opacity-95 transition-colors duration-500 ${hoveredSection === 5 ? 'text-[#9b00e5]' : 'text-white'}`}
             >
             A Music Streaming Web Platform
             </p>
           </div>
         </div>
       </div>
-      
-     
-      
     </div>
   );
 };

@@ -195,18 +195,18 @@ function projectHeading() {
   }, []);
   
   return (
-    <div ref={componentRef} className="flex flex items-center justify-center h-screen bg-red-400 overflow-hidden">
+    <div ref={componentRef} className="flex items-center justify-center h-screen bg-red-400 overflow-hidden">
       <div ref={leftSideRef} className="w-1/2 h-full bg-[#f3dacb] relative">
-        <div className="w-full h-[10%] flex justify-between items-center text-red-400 px-5">
-          <span className={`${anton.className} text-3xl font-bold name-text`}>Anugrah Singh</span>
-          <span className={`${anton.className} text-4xl text-black font-bold icon-wrapper`}><MdOutlineWork /></span>
+        <div className="w-full h-[10%] flex justify-between items-center text-red-400 px-[clamp(1.5rem,3vw,4rem)]">
+          <span className={`${anton.className} text-[clamp(2rem,2.5vw,4rem)] font-bold name-text`}>Anugrah Singh</span>
+          <span className={`${anton.className} text-[clamp(2.5rem,3vw,5rem)] text-black font-bold icon-wrapper`}><MdOutlineWork /></span>
         </div>
 
-        <div className={`${anton.className} w-full h-[70%] flex justify-start items-center px-5 text-black text-9xl font-bold -mt-4 heading-text`}>
+        <div className={`${anton.className} w-full h-[70%] flex justify-start items-center px-[clamp(1.5rem,3vw,4rem)] text-black text-[clamp(4rem,5vw,10rem)] font-bold -mt-[clamp(1.5rem,3vw,4rem)] heading-text`}>
           What I've Been Working On
         </div>
         
-        <div className={`${greatVibes.className} w-full h-[20%] flex justify-start items-center px-5 text-red-400 text-[3rem] font-bold pe-28 leading-none -mt-6 subheading-text`}>
+        <div className={`${greatVibes.className} w-full h-[20%] flex justify-start items-center px-[clamp(1.5rem,3vw,4rem)] text-red-400 text-[clamp(3rem,3vw,4rem)] font-bold pe-[clamp(3rem,6vw,10rem)] leading-none -mt-[clamp(2rem,3vw,4.5rem)] subheading-text`}>
           🚀 Explore a curated collection of projects I've developed to tackle real-world challenges with innovative solutions. 💡
         </div>
       </div>
@@ -214,7 +214,7 @@ function projectHeading() {
       <div ref={rightSideRef} className="w-1/2 h-full bg-black flex flex-col justify-center items-end">
         <div className="w-full flex justify-end">
           <div 
-            className="w-[75%] h-[6rem] rounded-l-2xl p-4 flex items-center justify-start mb-4 letter-block"
+            className="w-[80%] h-[clamp(4.5rem,6.5vw,9.5rem)] rounded-l-2xl p-[clamp(1rem,1.5vw,2rem)] flex items-center justify-start mb-[clamp(1rem,1.5vw,2rem)] letter-block"
             ref={el => letterRefs.current[0] = el}
             style={{ 
               background: "linear-gradient(135deg, rgba(255, 154, 158, 0.6) 0%, rgba(250, 208, 196, 0.6) 100%)",
@@ -223,13 +223,13 @@ function projectHeading() {
               boxShadow: "0 8px 32px 0 rgba(255, 79, 79, 0.2)"
             }}
           > 
-            <div className="rounded-lg bg-[#f3dacb] w-[4rem] font-bold text-3xl h-full flex items-center justify-center letter">B</div>
+            <div className="rounded-lg bg-[#f3dacb] w-[clamp(3rem,3.5vw,5rem)] font-bold text-[clamp(2rem,2vw,3.5rem)] h-full flex items-center justify-center letter">B</div>
           </div>
         </div>
 
         <div className="w-full flex justify-end">
           <div 
-            className="w-[60%] h-[6rem] rounded-l-2xl p-4 flex items-center justify-start mb-4 letter-block"
+            className="w-[65%] h-[clamp(4.5rem,6.5vw,9.5rem)] rounded-l-2xl p-[clamp(1rem,1.5vw,2rem)] flex items-center justify-start mb-[clamp(1rem,1.5vw,2rem)] letter-block"
             ref={el => letterRefs.current[1] = el}
             style={{ 
               background: "linear-gradient(135deg, rgba(255, 154, 158, 0.6) 0%, rgba(250, 208, 196, 0.6) 100%)",
@@ -238,13 +238,13 @@ function projectHeading() {
               boxShadow: "0 8px 32px 0 rgba(255, 79, 79, 0.2)"
             }}
           > 
-            <div className="rounded-lg bg-[#f3dacb] w-[4rem] font-bold text-3xl h-full flex items-center justify-center letter">U</div>
+            <div className="rounded-lg bg-[#f3dacb] w-[clamp(3rem,3.5vw,5rem)] font-bold text-[clamp(2rem,2vw,3.5rem)] h-full flex items-center justify-center letter">U</div>
           </div>
         </div>
 
         <div className="w-full flex justify-end">
           <div 
-            className="w-[70%] h-[6rem] rounded-l-2xl p-4 flex items-center justify-start mb-4 letter-block"
+            className="w-[75%] h-[clamp(4.5rem,6.5vw,9.5rem)] rounded-l-2xl p-[clamp(1rem,1.5vw,2rem)] flex items-center justify-start mb-[clamp(1rem,1.5vw,2rem)] letter-block"
             ref={el => letterRefs.current[2] = el}
             style={{ 
               background: "linear-gradient(135deg, rgba(255, 154, 158, 0.6) 0%, rgba(250, 208, 196, 0.6) 100%)",
@@ -253,13 +253,13 @@ function projectHeading() {
               boxShadow: "0 8px 32px 0 rgba(255, 79, 79, 0.2)"
             }}
           > 
-            <div className="rounded-lg bg-[#f3dacb] w-[4rem] font-bold text-3xl h-full flex items-center justify-center letter">I</div>
+            <div className="rounded-lg bg-[#f3dacb] w-[clamp(3rem,3.5vw,5rem)] font-bold text-[clamp(2rem,2vw,3.5rem)] h-full flex items-center justify-center letter">I</div>
           </div>
         </div>
 
         <div className="w-full flex justify-end">
           <div 
-            className="w-[40%] h-[6rem] rounded-l-2xl p-4 flex items-center justify-start mb-4 letter-block"
+            className="w-[45%] h-[clamp(4.5rem,6.5vw,9.5rem)] rounded-l-2xl p-[clamp(1rem,1.5vw,2rem)] flex items-center justify-start mb-[clamp(1rem,1.5vw,2rem)] letter-block"
             ref={el => letterRefs.current[3] = el}
             style={{ 
               background: "linear-gradient(135deg, rgba(255, 154, 158, 0.6) 0%, rgba(250, 208, 196, 0.6) 100%)",
@@ -268,13 +268,13 @@ function projectHeading() {
               boxShadow: "0 8px 32px 0 rgba(255, 79, 79, 0.2)"
             }}
           > 
-            <div className="rounded-lg bg-[#f3dacb] w-[4rem] font-bold text-3xl h-full flex items-center justify-center letter">L</div>
+            <div className="rounded-lg bg-[#f3dacb] w-[clamp(3rem,3.5vw,5rem)] font-bold text-[clamp(2rem,2vw,3.5rem)] h-full flex items-center justify-center letter">L</div>
           </div>
         </div>
 
         <div className="w-full flex justify-end">
           <div 
-            className="w-[90%] h-[6rem] rounded-l-2xl p-4 flex items-center justify-start mb-4 letter-block"
+            className="w-[95%] h-[clamp(4.5rem,6.5vw,9.5rem)] rounded-l-2xl p-[clamp(1rem,1.5vw,2rem)] flex items-center justify-start mb-[clamp(1rem,1.5vw,2rem)] letter-block"
             ref={el => letterRefs.current[4] = el}
             style={{ 
               background: "linear-gradient(135deg, rgba(255, 154, 158, 0.6) 0%, rgba(250, 208, 196, 0.6) 100%)",
@@ -283,13 +283,13 @@ function projectHeading() {
               boxShadow: "0 8px 32px 0 rgba(255, 79, 79, 0.2)"
             }}
           > 
-            <div className="rounded-lg bg-[#f3dacb] w-[4rem] font-bold text-3xl h-full flex items-center justify-center letter">D</div>
+            <div className="rounded-lg bg-[#f3dacb] w-[clamp(3rem,3.5vw,5rem)] font-bold text-[clamp(2rem,2vw,3.5rem)] h-full flex items-center justify-center letter">D</div>
           </div>
         </div>
 
         <div className="w-full flex justify-end">
           <div 
-            className="w-[70%] h-[6rem] rounded-l-2xl p-4 flex items-center justify-start mb-4 letter-block"
+            className="w-[75%] h-[clamp(4.5rem,6.5vw,9.5rem)] rounded-l-2xl p-[clamp(1rem,1.5vw,2rem)] flex items-center justify-start mb-[clamp(1rem,1.5vw,2rem)] letter-block"
             ref={el => letterRefs.current[5] = el}
             style={{ 
               background: "linear-gradient(135deg, rgba(255, 154, 158, 0.6) 0%, rgba(250, 208, 196, 0.6) 100%)",
@@ -298,7 +298,7 @@ function projectHeading() {
               boxShadow: "0 8px 32px 0 rgba(255, 79, 79, 0.2)"
             }}
           > 
-            <div className="rounded-lg bg-[#f3dacb] w-[4rem] font-bold text-3xl h-full flex items-center justify-center letter">S</div>
+            <div className="rounded-lg bg-[#f3dacb] w-[clamp(3rem,3.5vw,5rem)] font-bold text-[clamp(2rem,2vw,3.5rem)] h-full flex items-center justify-center letter">S</div>
           </div>
         </div>
       </div>
@@ -306,4 +306,4 @@ function projectHeading() {
   )
 }
 
-export default projectHeading
+export default projectHeading;

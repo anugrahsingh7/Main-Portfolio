@@ -26,7 +26,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-transparent text-[#f2d9ca] w-full ">
+    <nav className="absolute bg-transparent text-[#f2d9ca] w-full ">
       <div className="container mx-auto px-0 py-3 flex items-center justify-between">
         
         {/* Company Name */}

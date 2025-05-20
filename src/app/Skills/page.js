@@ -13,7 +13,7 @@ const Card = () => {
     <StyledWrapper id="skills">
     
       <div className='text-white justify-center flex'><h1></h1></div>
-      <div className="wrapper scale-110 max-h-screen min-h-screen mt-30">
+      <div className="wrapper scale-90 max-h-screen min-h-screen mt-30">
           <div className="inner" style={{ '--quantity': 10 }}>
           <div className="card" style={{ '--index': 0, '--color-card': '255, 0, 0' }} onClick={() => handleCardClick('https://www.javascripttutorial.net/')}>
             <div className="img flex justify-center items-center" >

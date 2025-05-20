@@ -125,7 +125,7 @@ function Blogs() {
                 });
             }
         });
-        scrollWithEasing(-1335);
+        scrollWithEasing(-1300);
     };
     
     const scrollRight = () => {
@@ -140,7 +140,7 @@ function Blogs() {
                 });
             }
         });
-        scrollWithEasing(1335);
+        scrollWithEasing(1270);
     };
 
     // Function to add a blog card to the refs array
@@ -196,7 +196,7 @@ function Blogs() {
 
     return (
         <div id="blogs" ref={sectionRef} className="w-screen min-h-screen max-h-screen bg-[#ffe5d5] flex justify-center items-center relative overflow-hidden">
-            <h1 ref={titleRef} className={`${anton.className} text-[34rem] font-bold text-red-400`}>BLOGS</h1> 
+            <h1 ref={titleRef} className={`${anton.className} text-[10rem] md:text-[20rem] lg:text-[34rem] font-bold text-red-400`}>BLOGS</h1> 
 
             {/* blogs div */}
             <div 
@@ -214,7 +214,7 @@ function Blogs() {
                 {/* blog 1 */}
                 <div 
                     ref={addToRefs}
-                    className="min-h-1/2 max-h-1/2 min-w-1/2 max-w-1/2 ms-[42vh] me-[43vh] rounded-xl p-8 transition-all duration-500 cursor-pointer flex-col relative shadow-2xl group overflow-hidden backdrop-blur-sm border border-white/20" 
+                    className="min-h-[55%] max-h-[55%] w-[80vw] sm:w-[60vw] md:w-[50vw] lg:min-w-[50%] lg:max-w-[50%] ms-[5vh] sm:ms-[20vh] md:ms-[30vh] lg:ms-[42vh] me-[5vh] sm:me-[20vh] md:me-[30vh] lg:me-[43vh] rounded-xl p-4 sm:p-6 md:p-8 transition-all duration-500 cursor-pointer flex-col relative shadow-2xl group overflow-hidden backdrop-blur-sm border border-white/20" 
                     style={{ 
                         background: "linear-gradient(135deg, rgba(255, 154, 158, 0.6) 0%, rgba(250, 208, 196, 0.6) 100%)",
                         backdropFilter: "blur(10px)",
@@ -222,17 +222,17 @@ function Blogs() {
                         boxShadow: "0 8px 32px 0 rgba(255, 79, 79, 0.2)"
                     }}>
                     <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-transparent opacity-0 transition-opacity duration-500"></div>
-                    <div className={`${playfair.className} text-red-400 text-3xl font-bold relative z-10 mb-3 tracking-tight`}>
+                    <div className={`${playfair.className} text-red-400 text-xl sm:text-2xl md:text-3xl font-bold relative z-10 mb-3 tracking-tight`}>
                         1. From College Cafeteria to Code: Building the BPIT Canteen Website
                     </div>
-                    <div className={`${montserrat.className} text-red-900/80 text-lg mt-1 relative z-10 leading-relaxed line-clamp-7 overflow-hidden`}>
+                    <div className={`${montserrat.className} text-red-900/80 text-base sm:text-lg mt-1 relative z-10 leading-relaxed line-clamp-7 overflow-hidden`}>
                         As a BTech student at BPIT, I saw a real-world problem — long queues and confusion around food orders. 
                         That's when I decided to build a full-fledged canteen website using React.js.
                         I integrated user authentication, a cart system, and even order placement with cooking instructions. 
                         The biggest win? Seeing my classmates actually use it and appreciate the convenience. 
                         It was the first time my code solved a real-life problem, and it felt incredible.
                     </div>
-                    <div className="absolute bottom-4 right-4 flex gap-2 opacity-0 transition-opacity duration-500">
+                    <div className="absolute bottom-4 right-4 flex gap-2 opacity-0 transition-opacity duration-500 ">
                         <div className="rounded-full bg-white/30 p-2 backdrop-blur-md hover:bg-white/40 transition-all cursor-pointer">
                             <ImAttachment className="text-red-800" size={18} />
                         </div>
@@ -245,7 +245,7 @@ function Blogs() {
                 {/* blog 2 */}
                 <div 
                     ref={addToRefs}
-                    className="min-h-1/2 max-h-1/2 min-w-1/2 max-w-1/2 ms-[42vh] me-[43vh] rounded-xl p-8 transition-all duration-500 cursor-pointer flex-col relative shadow-2xl group overflow-hidden backdrop-blur-sm border border-white/20" 
+                    className="min-h-[55%] max-h-[55%] w-[80vw] sm:w-[60vw] md:w-[50vw] lg:min-w-[50%] lg:max-w-[50%] ms-[5vh] sm:ms-[20vh] md:ms-[30vh] lg:ms-[42vh] me-[5vh] sm:me-[20vh] md:me-[30vh] lg:me-[43vh] rounded-xl p-4 sm:p-6 md:p-8 transition-all duration-500 cursor-pointer flex-col relative shadow-2xl group overflow-hidden backdrop-blur-sm border border-white/20" 
                     style={{ 
                         background: "linear-gradient(135deg, rgba(255, 184, 184, 0.6) 0%, rgba(255, 236, 210, 0.6) 100%)",
                         backdropFilter: "blur(10px)",
@@ -253,10 +253,10 @@ function Blogs() {
                         boxShadow: "0 8px 32px 0 rgba(255, 79, 79, 0.2)"
                     }}>
                     <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-transparent opacity-0 transition-opacity duration-500"></div>
-                    <div className={`${playfair.className} text-red-400 text-3xl font-bold relative z-10 mb-3 tracking-tight`}>
+                    <div className={`${playfair.className} text-red-400 text-xl sm:text-2xl md:text-3xl font-bold relative z-10 mb-3 tracking-tight`}>
                         2. Integrating Razorpay: My First Real-World Payment Gateway
                     </div>
-                    <div className={`${montserrat.className} text-red-900/80 text-lg mt-1 relative z-10 leading-relaxed line-clamp-7 overflow-hidden`}>
+                    <div className={`${montserrat.className} text-red-900/80 text-base sm:text-lg mt-1 relative z-10 leading-relaxed line-clamp-7 overflow-hidden`}>
                         When I added Razorpay to my project, it felt like crossing a milestone. I learned how to securely send payment details, handle transaction success, and redirect users after payment — all in a production-like flow. Seeing that payment window pop up and work smoothly made the project feel professional. It taught me the importance of seamless UI/UX in fintech components and how little details can build trust with users.
                     </div>
                     <div className="absolute bottom-4 right-4 flex gap-2 opacity-0 transition-opacity duration-500">
@@ -272,7 +272,7 @@ function Blogs() {
                 {/* blog 3 */}
                 <div 
                     ref={addToRefs}
-                    className="min-h-1/2 max-h-1/2 min-w-1/2 max-w-1/2 ms-[42vh] me-[43vh] rounded-xl p-8 transition-all duration-500 cursor-pointer flex-col relative shadow-2xl group overflow-hidden backdrop-blur-sm border border-white/20" 
+                    className="min-h-[55%] max-h-[55%] w-[80vw] sm:w-[60vw] md:w-[50vw] lg:min-w-[50%] lg:max-w-[50%] ms-[5vh] sm:ms-[20vh] md:ms-[30vh] lg:ms-[42vh] me-[5vh] sm:me-[20vh] md:me-[30vh] lg:me-[43vh] rounded-xl p-4 sm:p-6 md:p-8 transition-all duration-500 cursor-pointer flex-col relative shadow-2xl group overflow-hidden backdrop-blur-sm border border-white/20" 
                     style={{ 
                         background: "linear-gradient(135deg, rgba(255, 129, 119, 0.6) 0%, rgba(255, 241, 235, 0.6) 100%)",
                         backdropFilter: "blur(10px)",
@@ -280,10 +280,10 @@ function Blogs() {
                         boxShadow: "0 8px 32px 0 rgba(255, 79, 79, 0.2)"
                     }}>
                     <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-transparent opacity-0 transition-opacity duration-500"></div>
-                    <div className={`${playfair.className} text-red-400 text-3xl font-bold relative z-10 mb-3 tracking-tight`}>
+                    <div className={`${playfair.className} text-red-400 text-xl sm:text-2xl md:text-3xl font-bold relative z-10 mb-3 tracking-tight`}>
                         3. Lessons Learned: Things I Wish I Knew Before Starting Web Dev
                     </div>
-                    <div className={`${montserrat.className} text-red-900/80 text-lg mt-1 relative z-10 leading-relaxed line-clamp-7 overflow-hidden`}>
+                    <div className={`${montserrat.className} text-red-900/80 text-base sm:text-lg mt-1 relative z-10 leading-relaxed line-clamp-7 overflow-hidden`}>
                         Looking back, I wish someone had told me that responsive design matters just as much as functionality. Or that managing state smartly can save hours of debugging. I also learned the hard way that copying code without understanding it leads to bugs you can't fix. But every mistake made me better. Web development isn't just about writing code—it's about thinking like a user and solving problems with elegance.
                     </div>
                     <div className="absolute bottom-4 right-4 flex gap-2 opacity-0 transition-opacity duration-500">
@@ -299,7 +299,7 @@ function Blogs() {
                 {/* blog 4 */}
                 <div 
                     ref={addToRefs}
-                    className="min-h-1/2 max-h-1/2 min-w-1/2 max-w-1/2 ms-[42vh] me-[43vh] rounded-xl p-8 transition-all duration-500 cursor-pointer flex-col relative shadow-2xl group overflow-hidden backdrop-blur-sm border border-white/20" 
+                    className="min-h-[55%] max-h-[55%] w-[80vw] sm:w-[60vw] md:w-[50vw] lg:min-w-[50%] lg:max-w-[50%] ms-[5vh] sm:ms-[20vh] md:ms-[30vh] lg:ms-[42vh] me-[5vh] sm:me-[20vh] md:me-[30vh] lg:me-[43vh] rounded-xl p-4 sm:p-6 md:p-8 transition-all duration-500 cursor-pointer flex-col relative shadow-2xl group overflow-hidden backdrop-blur-sm border border-white/20" 
                     style={{ 
                         background: "linear-gradient(135deg, rgba(255, 187, 181, 0.6) 0%, rgba(255, 216, 203, 0.6) 100%)",
                         backdropFilter: "blur(10px)",
@@ -307,10 +307,10 @@ function Blogs() {
                         boxShadow: "0 8px 32px 0 rgba(255, 79, 79, 0.2)"
                     }}>
                     <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-transparent opacity-0 transition-opacity duration-500"></div>
-                    <div className={`${playfair.className} text-red-400 text-3xl font-bold relative z-10 mb-3 tracking-tight`}>
+                    <div className={`${playfair.className} text-red-400 text-xl sm:text-2xl md:text-3xl font-bold relative z-10 mb-3 tracking-tight`}>
                         4. Why I Switched from Create React App to Next.js
                     </div>
-                    <div className={`${montserrat.className} text-red-900/80 text-lg mt-1 relative z-10 leading-relaxed line-clamp-7 overflow-hidden`}>
+                    <div className={`${montserrat.className} text-red-900/80 text-base sm:text-lg mt-1 relative z-10 leading-relaxed line-clamp-7 overflow-hidden`}>
                         Initially, like most beginners, I used Create React App for all my projects. But as I started working on more advanced apps, especially those that required better SEO and dynamic routing, CRA began to feel limiting. Switching to Next.js felt like unlocking a whole new level — built-in routing, SSR/SSG, image optimization, and the ability to use API routes made development way more efficient. I no longer had to rely on third-party tools or do extra configuration for basic things. 
                     </div>
                     <div className="absolute bottom-4 right-4 flex gap-2 opacity-0 transition-opacity duration-500">
@@ -326,7 +326,7 @@ function Blogs() {
                 {/* blog 5 */}
                 <div 
                     ref={addToRefs}
-                    className="min-h-1/2 max-h-1/2 min-w-1/2 max-w-1/2 ms-[42vh] me-[43vh] rounded-xl p-8 transition-all duration-500 cursor-pointer flex-col relative shadow-2xl group overflow-hidden backdrop-blur-sm border border-white/20" 
+                    className="min-h-[55%] max-h-[55%] w-[80vw] sm:w-[60vw] md:w-[50vw] lg:min-w-[50%] lg:max-w-[50%] ms-[5vh] sm:ms-[20vh] md:ms-[30vh] lg:ms-[42vh] me-[5vh] sm:me-[20vh] md:me-[30vh] lg:me-[43vh] rounded-xl p-4 sm:p-6 md:p-8 transition-all duration-500 cursor-pointer flex-col relative shadow-2xl group overflow-hidden backdrop-blur-sm border border-white/20" 
                     style={{ 
                         background: "linear-gradient(135deg, rgba(255, 195, 160, 0.6) 0%, rgba(255, 175, 189, 0.6) 100%)",
                         backdropFilter: "blur(10px)",
@@ -334,10 +334,10 @@ function Blogs() {
                         boxShadow: "0 8px 32px 0 rgba(255, 79, 79, 0.2)"
                     }}>
                     <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-transparent opacity-0 transition-opacity duration-500"></div>
-                    <div className={`${playfair.className} text-red-400 text-3xl font-bold relative z-10 mb-3 tracking-tight`}>
+                    <div className={`${playfair.className} text-red-400 text-xl sm:text-2xl md:text-3xl font-bold relative z-10 mb-3 tracking-tight`}>
                         5. Centering a Login Page on Mobile is Harder Than It Looks
                     </div>
-                    <div className={`${montserrat.className} text-red-900/80 text-lg mt-1 relative z-10 leading-relaxed line-clamp-7 overflow-hidden`}>
+                    <div className={`${montserrat.className} text-red-900/80 text-base sm:text-lg mt-1 relative z-10 leading-relaxed line-clamp-7 overflow-hidden`}>
                         When I was designing the login page for my app, I assumed centering it would be simple. But on mobile screens, everything broke — vertical alignment was off, and there was unexpected scroll. After hours of tweaking, I finally got it right using Tailwind CSS: min-h-screen, flex, items-center, and justify-center became my new best friends. I also made sure the container used overflow-hidden and was responsive across screen sizes.
                     </div>
                     <div className="absolute bottom-4 right-4 flex gap-2 opacity-0 transition-opacity duration-500">
@@ -351,7 +351,7 @@ function Blogs() {
                 </div>
 
             
-                <div className=" min-h-1/2 min-w-[1px] max-w-1/2 bg-transparent "></div>
+                <div className="min-h-[55%] min-w-[1px] max-w-[50%] bg-transparent"></div>
             </div>
             
             {/* Navigation buttons */}

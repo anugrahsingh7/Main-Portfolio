@@ -1,9 +1,34 @@
-
+// app/layout.js
+"use client"
 import "./globals.css";
 import Cursor from "@/components/Cursor";
-
+import { useEffect, useState } from "react";
+import MobileWarning from "@/components/MobileWarning";
 
 export default function RootLayout({ children }) {
+  const [isDesktop, setIsDesktop] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const isLandscape = window.innerWidth > window.innerHeight; // Check landscape mode
+      const isLargeScreen = window.innerWidth >= 1024 && window.innerHeight >= 600; // Ensures it's a reasonable desktop size
+      const userAgent = navigator.userAgent;
+      const isIpadPro = /iPad.*OS.*\s([\d_]+)/.test(userAgent); // Detect iPad Pro
+
+      // Check if device is desktop (wide enough screen) and in landscape mode but exclude iPad Pro
+      setIsDesktop(
+        isLargeScreen && isLandscape && !isIpadPro
+      );
+    };
+
+    handleResize(); // Initial check on load
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <html lang="en">
       <head>
@@ -16,12 +41,13 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body className={`relative w-full min-h-screen bg-black overflow-x-hidden`}>
-       <Cursor/>
-        <div className="fixed inset-0 -z-10">
-          <img className="w-full h-full object-cover" src="/RedBG2.jpeg" alt="bg image" />
-        </div>
-        {children}
+      <body>
+        <Cursor />
+        {!isDesktop ? (
+          <MobileWarning />
+        ) : (
+          children // Show the regular content for desktop or allowed devices
+        )}
       </body>
     </html>
   );

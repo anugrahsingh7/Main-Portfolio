@@ -23,7 +23,7 @@ const WorkHeading = () => {
             <pre className='text-red-400 font-bold'>
               <code>&lt;h1&gt; Our Web Development Services: Custom Solutions for Every Need &lt;/h1&gt;</code>
             </pre>
-            <pre className='mt-2 text-2xl text-green-300 font-thin'>
+            <pre className='mt-2 text-xl text-green-300 font-thin'>
               <code>
                 &lt;p&gt; As a dedicated and skilled web developer, I specialize in creating custom websites that cater to a wide variety of industries and individual needs. With a passion for crafting seamless, user-friendly digital experiences 🌐, I turn ideas into functional and visually captivating websites 🎨.
 
@@ -43,8 +43,8 @@ From dynamic e-commerce platforms 🛒 to creative portfolio showcases 📸, her
 
 const StyledWrapper = styled.div`
   .card {
-    width: 78rem;
-    height: 43rem;
+    width: 70rem;
+    height: 40rem;
     padding: 20px;
     border: 1px solid #ffe5d5;
     border-radius: 10px;
