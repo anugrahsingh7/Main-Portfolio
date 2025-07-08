@@ -1,6 +1,20 @@
 @import "tailwindcss";
 
+<<<<<<< HEAD
 html, body{
+=======
+html, body {
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html{
+>>>>>>> 04f25bf (responsiveness increased)
   scroll-behavior: smooth;
   overflow-x: hidden;
   background-color: black;
