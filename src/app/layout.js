@@ -1,16 +1,9 @@
-<<<<<<< HEAD
 // app/layout.js
 "use client"
 import "./globals.css";
 import Cursor from "@/components/Cursor";
 import { useEffect, useState } from "react";
 import MobileWarning from "@/components/MobileWarning";
-=======
-import "./globals.css";
-import Cursor from "@/components/Cursor";
-import DeviceBlocker from "@/components/DeviceBlocker";
-
->>>>>>> 04f25bf (responsiveness increased)
 
 export default function RootLayout({ children }) {
   const [isDesktop, setIsDesktop] = useState(true);
@@ -48,7 +41,6 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-<<<<<<< HEAD
       <body>
         <Cursor />
         {!isDesktop ? (
@@ -56,15 +48,6 @@ export default function RootLayout({ children }) {
         ) : (
           children // Show the regular content for desktop or allowed devices
         )}
-=======
-      <body className={`relative w-screen min-h-screen bg-black overflow-x-hidden`}>
-       <DeviceBlocker/>
-       <Cursor/>
-        <div className="fixed inset-0 -z-10">
-          {/* <img className="w-screen h-screen object-cover" src="/RedBG2.jpeg" alt="bg image" /> */}
-        </div>
-        {children}
->>>>>>> 04f25bf (responsiveness increased)
       </body>
     </html>
   );
