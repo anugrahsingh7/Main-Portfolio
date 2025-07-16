@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/Anugrah singh logo-modified (1).png" />
+      <link rel="icon" href="/A.png" className="rounded-full" />
         <title>Anugrah Singh - Professional Portfolio</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />

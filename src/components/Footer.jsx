@@ -4,7 +4,9 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import Link from 'next/link';
 import { FaArrowRightLong, FaChevronUp } from "react-icons/fa6";
+import { Anton, Great_Vibes } from "next/font/google";
 
+const anton = Anton({ subsets: ["latin"], weight: ["400"] });
 const Footer = () => {
   const footerRef = useRef(null);
   const contentRef = useRef(null);
@@ -49,11 +51,11 @@ const Footer = () => {
           {/* Column 1: Logo and Description */}
           <div className="flex flex-col">
             <Link href="#home" className="group inline-block mb-5 w-fit">
-              <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 rounded-md flex items-center justify-center overflow-hidden">
+              <div className="flex items-center space-x-2">
+                <div className="w-12 h-12 border border-[#ff6467] rounded-md flex items-center justify-center overflow-hidden">
                   <img src="/logo.png" alt="logo" className="w-full h-full object-contain " />
                 </div>
-                <span className="text-red-400/90 font-semibold tracking-wide text-lg">
+                <span className={`${anton.className} text-red-400/90 font-semibold tracking-wide text-2xl`}>
                   Anugrah Singh
                 </span>
               </div>
