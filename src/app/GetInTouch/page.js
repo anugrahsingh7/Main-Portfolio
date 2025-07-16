@@ -50,14 +50,14 @@ export default function GetInTouch() {
           <div className="lg:w-1/2 lg:mx-6">
             <h1
               className={`${anton.className}  font-semibold text-red-400 capitalize`}
-              style={{ fontSize: "clamp(1rem, 2vw, 4rem)" }}
+              style={{ fontSize: "clamp(1rem, 4vw, 6rem)" }}
             >
               Get in touch
               <br /> to see your ideas <br />
               come to life
             </h1>
             <div className="mt-6 md:mt-8 text-[#ffe5d5]"
-          style={{ fontSize: "clamp(0.25rem, 1.2vw, 1.8rem)" }}>
+          style={{ fontSize: "clamp(0.375rem, 1.5vw, 2.25rem)" }}>
               If you're looking to collaborate with a passionate and skilled
               team, and would like to hire me and my team for your project or
               idea, please don’t hesitate to get in touch with us right
@@ -65,7 +65,7 @@ export default function GetInTouch() {
             </div>
             <div className="mt-6 w-80 md:mt-8">
               <h3 className={`${anton.className}  text-[#ffe5d5]`}
-               style={{ fontSize: "clamp(0.75rem, 3vw, 4.5rem)" }}>
+               style={{ fontSize: "clamp(0.5rem, 2vw, 3rem)" }}>
                 Connect with me
               </h3>
               <div className="flex mt-4 -mx-1.5">
@@ -102,8 +102,7 @@ export default function GetInTouch() {
                 What do you want to ask?
               </h1>
               <form className="mt-6" onSubmit={handleSubmit}>
-                <label className="block mb-2 font-bold text-black"
-                  style={{ fontSize: 'clamp(0.5625rem, 1.5vw, 1.125rem)' }}>
+                <label className="block mb-2 text-lg font-bold text-black">
                   Full Name
                 </label>
                 <input
@@ -113,12 +112,10 @@ export default function GetInTouch() {
                   onChange={handleChange}
                   required
                   className="block w-full px-5 py-3 mt-2 text-black bg-red-400 border border-black/50 rounded-md placeholder-black/30 focus:outline-none"
-                  style={{ fontSize: 'clamp(0.6375rem, 1.5vw, 1.125rem)', padding: 'clamp(0.5625rem, 1.5vw, 0.9375rem) clamp(0.75rem, 2.25vw, 1.5rem)' }}
                   placeholder="Enter your name"
                 />
 
-                <label className="block mt-6 mb-2 font-bold text-black"
-                  style={{ fontSize: 'clamp(0.5625rem, 1.5vw, 1.125rem)' }}>
+                <label className="block mt-6 mb-2 text-lg font-bold text-black">
                   Email address
                 </label>
                 <input
@@ -128,12 +125,10 @@ export default function GetInTouch() {
                   onChange={handleChange}
                   required
                   className="block w-full px-5 py-3 mt-2 text-black bg-red-400 border border-black/50 rounded-md placeholder-black/30 focus:outline-none"
-                  style={{ fontSize: 'clamp(0.6375rem, 1.5vw, 1.125rem)', padding: 'clamp(0.5625rem, 1.5vw, 0.9375rem) clamp(0.75rem, 2.25vw, 1.5rem)' }}
                   placeholder="Enter your email"
                 />
 
-                <label className="block mt-6 mb-2 font-bold text-black"
-                  style={{ fontSize: 'clamp(0.5625rem, 1.5vw, 1.125rem)' }}>
+                <label className="block mt-6 mb-2 text-lg font-bold text-black">
                   Message
                 </label>
                 <textarea
@@ -142,14 +137,12 @@ export default function GetInTouch() {
                   onChange={handleChange}
                   required
                   className="block w-full h-32 px-5 py-3 mt-2 text-black bg-red-400 border border-black/50 rounded-md placeholder-black/30 focus:outline-none"
-                  style={{ fontSize: 'clamp(0.6375rem, 1.5vw, 1.125rem)', padding: 'clamp(0.5625rem, 1.5vw, 0.9375rem) clamp(0.75rem, 2.25vw, 1.5rem)' }}
                   placeholder="Type your message here"
                 ></textarea>
 
                 <button
                   type="submit"
-                  className={`${anton.className} cursor-pointer w-full mt-6 border border-black rounded-md hover:bg-black hover:text-white transition-all duration-300 ease-in-out`}
-                  style={{ fontSize: 'clamp(0.75rem, 1.875vw, 1.5rem)', padding: 'clamp(0.5625rem, 1.5vw, 0.9375rem) clamp(0.75rem, 2.25vw, 1.5rem)' }}
+                  className={`${anton.className} cursor-pointer w-full mt-6 px-6 py-3 text-black border border-black rounded-md hover:bg-black hover:text-white transition-all duration-300 ease-in-out`}
                 >
                   Send Message
                 </button>
