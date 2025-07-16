@@ -46,8 +46,8 @@ export default function GetInTouch() {
       className="w-screen h-screen bg-black flex justify-center items-center"
     >
       <div className="container px-6 py-12 mx-auto">
-        <div className="lg:flex lg:items-center lg:-mx-6">
-          <div className="lg:w-1/2 lg:mx-6">
+        <div className="lg:flex lg:items-center lg:-mx-3">
+          <div className="lg:w-1/2 lg:mx-3">
             <h1
               className={`${anton.className}  font-semibold text-red-400 capitalize`}
               style={{ fontSize: "clamp(1rem, 4vw, 6rem)" }}
