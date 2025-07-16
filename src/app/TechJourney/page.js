@@ -1,3 +1,5 @@
+"use client"
+
 import { Anton } from 'next/font/google';
 import JourneyCard from '@/components/JourneyCard';
 const anton = Anton({ subsets: ["latin"], weight: ["400"] });
