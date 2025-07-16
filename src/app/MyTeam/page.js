@@ -115,7 +115,7 @@ function MyTeam() {
               <div className={`${anton.className} font-bold text-red-400 transform group-hover:scale-110 transition-duration-300 drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] text-center`}
               style={{ fontSize: "clamp(0.5rem, 2vw, 3rem)" }}
               >Anugrah Singh</div>
-              <p className="text-center max-w-[240px] sm:max-w-[280px] md:max-w-[320px] lg:max-w-[360px] text-white/90  leading-relaxed font-light hover:text-white transition-all duration-300 drop-shadow-[0_1px_1px_rgba(0,0,0,0.9)]"
+              <p className="text-center max-w-[240px] sm:max-w-[280px] md:max-w-[320px] lg:max-w-[360px] text-white/90 leading-relaxed font-light hover:text-white transition-all duration-300 drop-shadow-[0_1px_1px_rgba(0,0,0,0.9)]"
                style={{ fontSize: "clamp(0.4rem, 1.5vw, 3.7rem)" }}
               >I'm a passionate web developer with hands-on experience in modern technologies like GSAP, Locomotive Scroll, Lenis, Spline, Framer Motion, and Three.js. I specialize in creating smooth, interactive, and visually captivating user experiences using React, Next.js, and MongoDB.</p>
               
