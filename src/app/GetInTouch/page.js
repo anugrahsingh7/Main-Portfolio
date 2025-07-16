@@ -50,7 +50,7 @@ export default function GetInTouch() {
           <div className="lg:w-1/2 lg:mx-6">
             <h1
               className={`${anton.className}  font-semibold text-red-400 capitalize`}
-              style={{ fontSize: "clamp(1rem, 4vw, 4rem)" }}
+              style={{ fontSize: "clamp(1rem, 2vw, 4rem)" }}
             >
               Get in touch
               <br /> to see your ideas <br />
