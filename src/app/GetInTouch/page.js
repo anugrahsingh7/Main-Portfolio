@@ -43,44 +43,50 @@ export default function GetInTouch() {
   return (
     <div
       id="contact"
-      className="w-screen h-full bg-black flex justify-center items-center"
+      className="w-screen h-screen bg-black flex justify-center items-center"
     >
       <div className="container px-6 py-12 mx-auto">
         <div className="lg:flex lg:items-center lg:-mx-6">
           <div className="lg:w-1/2 lg:mx-6">
             <h1
-              className={`${anton.className} text-7xl font-semibold text-red-400 capitalize`}
+              className={`${anton.className}  font-semibold text-red-400 capitalize`}
+              style={{ fontSize: "clamp(1rem, 4vw, 6rem)" }}
             >
               Get in touch
               <br /> to see your ideas <br />
               come to life
             </h1>
-            <div className="mt-6 md:mt-8 text-[#ffe5d5]">
+            <div className="mt-6 md:mt-8 text-[#ffe5d5]"
+          style={{ fontSize: "clamp(0.375rem, 1.5vw, 2.25rem)" }}>
               If you're looking to collaborate with a passionate and skilled
               team, and would like to hire me and my team for your project or
               idea, please don’t hesitate to get in touch with us right
               here—we’re excited to connect!
             </div>
             <div className="mt-6 w-80 md:mt-8">
-              <h3 className={`${anton.className} text-3xl text-[#ffe5d5]`}>
+              <h3 className={`${anton.className}  text-[#ffe5d5]`}
+               style={{ fontSize: "clamp(0.75rem, 3vw, 4.5rem)" }}>
                 Connect with me
               </h3>
               <div className="flex mt-4 -mx-1.5">
                 <a
-                  className="mx-1.5 text-3xl text-red-400 hover:text-red-500"
+                  className="mx-1.5  text-red-400 hover:text-red-500"
                   href="https://www.linkedin.com/in/anugrah-singh-7777/"
+                  style={{ fontSize: "clamp(0.5rem, 2vw, 3rem)" }}
                 >
                   <FaLinkedinIn />
                 </a>
                 <a
-                  className="mx-1.5 text-3xl text-red-400 hover:text-red-500"
+                  className="mx-1.5  text-red-400 hover:text-red-500"
                   href="https://github.com/anugrahsingh7"
+                  style={{ fontSize: "clamp(0.5rem, 2vw, 3rem)" }}
                 >
                   <FaGithub />
                 </a>
                 <a
-                  className="mx-1.5 text-3xl text-red-400 hover:text-red-500"
+                  className="mx-1.5 text-red-400 hover:text-red-500"
                   href="mailto:anugrahsingh7777@gmail.com"
+                  style={{ fontSize: "clamp(0.5rem, 2vw, 3rem)" }}
                 >
                   <MdEmail />
                 </a>
@@ -96,7 +102,8 @@ export default function GetInTouch() {
                 What do you want to ask?
               </h1>
               <form className="mt-6" onSubmit={handleSubmit}>
-                <label className="block mb-2 text-lg font-bold text-black">
+                <label className="block mb-2 font-bold text-black"
+                  style={{ fontSize: 'clamp(0.422rem, 1.125vw, 0.844rem)' }}>
                   Full Name
                 </label>
                 <input
@@ -106,10 +113,12 @@ export default function GetInTouch() {
                   onChange={handleChange}
                   required
                   className="block w-full px-5 py-3 mt-2 text-black bg-red-400 border border-black/50 rounded-md placeholder-black/30 focus:outline-none"
+                  style={{ fontSize: 'clamp(0.478rem, 1.125vw, 0.844rem)', padding: 'clamp(0.422rem, 1.125vw, 0.703rem) clamp(0.563rem, 1.688vw, 1.125rem)' }}
                   placeholder="Enter your name"
                 />
 
-                <label className="block mt-6 mb-2 text-lg font-bold text-black">
+                <label className="block mt-6 mb-2 font-bold text-black"
+                  style={{ fontSize: 'clamp(0.422rem, 1.125vw, 0.844rem)' }}>
                   Email address
                 </label>
                 <input
@@ -119,10 +128,12 @@ export default function GetInTouch() {
                   onChange={handleChange}
                   required
                   className="block w-full px-5 py-3 mt-2 text-black bg-red-400 border border-black/50 rounded-md placeholder-black/30 focus:outline-none"
+                  style={{ fontSize: 'clamp(0.478rem, 1.125vw, 0.844rem)', padding: 'clamp(0.422rem, 1.125vw, 0.703rem) clamp(0.563rem, 1.688vw, 1.125rem)' }}
                   placeholder="Enter your email"
                 />
 
-                <label className="block mt-6 mb-2 text-lg font-bold text-black">
+                <label className="block mt-6 mb-2 font-bold text-black"
+                  style={{ fontSize: 'clamp(0.422rem, 1.125vw, 0.844rem)' }}>
                   Message
                 </label>
                 <textarea
@@ -131,12 +142,14 @@ export default function GetInTouch() {
                   onChange={handleChange}
                   required
                   className="block w-full h-32 px-5 py-3 mt-2 text-black bg-red-400 border border-black/50 rounded-md placeholder-black/30 focus:outline-none"
+                  style={{ fontSize: 'clamp(0.478rem, 1.125vw, 0.844rem)', padding: 'clamp(0.422rem, 1.125vw, 0.703rem) clamp(0.563rem, 1.688vw, 1.125rem)' }}
                   placeholder="Type your message here"
                 ></textarea>
 
                 <button
                   type="submit"
-                  className={`${anton.className} cursor-pointer w-full mt-6 px-6 py-3 text-black border border-black rounded-md hover:bg-black hover:text-white transition-all duration-300 ease-in-out`}
+                  className={`${anton.className} cursor-pointer w-full mt-6 border border-black rounded-md hover:bg-black hover:text-white transition-all duration-300 ease-in-out`}
+                  style={{ fontSize: 'clamp(0.563rem, 1.406vw, 1.125rem)', padding: 'clamp(0.422rem, 1.125vw, 0.703rem) clamp(0.563rem, 1.688vw, 1.125rem)' }}
                 >
                   Send Message
                 </button>
