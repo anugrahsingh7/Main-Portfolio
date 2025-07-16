@@ -46,8 +46,8 @@ export default function GetInTouch() {
       className="w-screen h-screen bg-black flex justify-center items-center"
     >
       <div className="container px-6 py-12 mx-auto">
-        <div className="lg:flex lg:items-center lg:-mx-3">
-          <div className="lg:w-1/2 lg:mx-3">
+        <div className="lg:flex lg:items-center lg:-mx-6">
+          <div className="lg:w-1/2 lg:mx-6">
             <h1
               className={`${anton.className}  font-semibold text-red-400 capitalize`}
               style={{ fontSize: "clamp(1rem, 4vw, 6rem)" }}
@@ -103,7 +103,7 @@ export default function GetInTouch() {
               </h1>
               <form className="mt-6" onSubmit={handleSubmit}>
                 <label className="block mb-2 font-bold text-black"
-                  style={{ fontSize: 'clamp(0.422rem, 1.125vw, 0.844rem)' }}>
+                  style={{ fontSize: 'clamp(0.5625rem, 1.5vw, 1.125rem)' }}>
                   Full Name
                 </label>
                 <input
@@ -113,12 +113,12 @@ export default function GetInTouch() {
                   onChange={handleChange}
                   required
                   className="block w-full px-5 py-3 mt-2 text-black bg-red-400 border border-black/50 rounded-md placeholder-black/30 focus:outline-none"
-                  style={{ fontSize: 'clamp(0.478rem, 1.125vw, 0.844rem)', padding: 'clamp(0.422rem, 1.125vw, 0.703rem) clamp(0.563rem, 1.688vw, 1.125rem)' }}
+                  style={{ fontSize: 'clamp(0.6375rem, 1.5vw, 1.125rem)', padding: 'clamp(0.5625rem, 1.5vw, 0.9375rem) clamp(0.75rem, 2.25vw, 1.5rem)' }}
                   placeholder="Enter your name"
                 />
 
                 <label className="block mt-6 mb-2 font-bold text-black"
-                  style={{ fontSize: 'clamp(0.422rem, 1.125vw, 0.844rem)' }}>
+                  style={{ fontSize: 'clamp(0.5625rem, 1.5vw, 1.125rem)' }}>
                   Email address
                 </label>
                 <input
@@ -128,12 +128,12 @@ export default function GetInTouch() {
                   onChange={handleChange}
                   required
                   className="block w-full px-5 py-3 mt-2 text-black bg-red-400 border border-black/50 rounded-md placeholder-black/30 focus:outline-none"
-                  style={{ fontSize: 'clamp(0.478rem, 1.125vw, 0.844rem)', padding: 'clamp(0.422rem, 1.125vw, 0.703rem) clamp(0.563rem, 1.688vw, 1.125rem)' }}
+                  style={{ fontSize: 'clamp(0.6375rem, 1.5vw, 1.125rem)', padding: 'clamp(0.5625rem, 1.5vw, 0.9375rem) clamp(0.75rem, 2.25vw, 1.5rem)' }}
                   placeholder="Enter your email"
                 />
 
                 <label className="block mt-6 mb-2 font-bold text-black"
-                  style={{ fontSize: 'clamp(0.422rem, 1.125vw, 0.844rem)' }}>
+                  style={{ fontSize: 'clamp(0.5625rem, 1.5vw, 1.125rem)' }}>
                   Message
                 </label>
                 <textarea
@@ -142,14 +142,14 @@ export default function GetInTouch() {
                   onChange={handleChange}
                   required
                   className="block w-full h-32 px-5 py-3 mt-2 text-black bg-red-400 border border-black/50 rounded-md placeholder-black/30 focus:outline-none"
-                  style={{ fontSize: 'clamp(0.478rem, 1.125vw, 0.844rem)', padding: 'clamp(0.422rem, 1.125vw, 0.703rem) clamp(0.563rem, 1.688vw, 1.125rem)' }}
+                  style={{ fontSize: 'clamp(0.6375rem, 1.5vw, 1.125rem)', padding: 'clamp(0.5625rem, 1.5vw, 0.9375rem) clamp(0.75rem, 2.25vw, 1.5rem)' }}
                   placeholder="Type your message here"
                 ></textarea>
 
                 <button
                   type="submit"
                   className={`${anton.className} cursor-pointer w-full mt-6 border border-black rounded-md hover:bg-black hover:text-white transition-all duration-300 ease-in-out`}
-                  style={{ fontSize: 'clamp(0.563rem, 1.406vw, 1.125rem)', padding: 'clamp(0.422rem, 1.125vw, 0.703rem) clamp(0.563rem, 1.688vw, 1.125rem)' }}
+                  style={{ fontSize: 'clamp(0.75rem, 1.875vw, 1.5rem)', padding: 'clamp(0.5625rem, 1.5vw, 0.9375rem) clamp(0.75rem, 2.25vw, 1.5rem)' }}
                 >
                   Send Message
                 </button>
