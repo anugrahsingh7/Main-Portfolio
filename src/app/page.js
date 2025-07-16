@@ -227,7 +227,8 @@ export default function Home() {
           <div className="relative w-full h-screen bg-[url('/RedBG2.jpeg')] bg-cover bg-center overflow-hidden">
   {/* ANUGRAH in center */}
   <div
-    className={`${anton.className} absolute inset-0 flex justify-center items-center scale-y-[1.3] cursor-default text-[5rem] sm:text-[8rem] md:text-[12rem] lg:text-[16rem] xl:text-[21.5rem] font-extrabold opacity-95 transition-all duration-300`}
+    className={`${anton.className} absolute inset-0 flex justify-center items-center scale-y-[1.3] cursor-default font-extrabold opacity-95 transition-all duration-300`}
+    style={{ fontSize: "clamp(6rem, 24vw, 36rem)" }}
   >
     {"ANUGRAH".split("").map((letter, index) => (
       <span
@@ -263,7 +264,7 @@ export default function Home() {
   {/* Bottom Left - Click Me! */}
   <div className="absolute bottom-4 left-4 flex items-center text-white">
     <StyledWrapper>
-      <div className="sharingon scale-65">
+      <div className="sharingon scale-[0.25] sm:scale-[0.325] md:scale-[0.4] lg:scale-[0.5] xl:scale-[0.6] 2xl:scale-[0.7]">
         <div className="ring">
           <div className="to" />
           <div className="to" />
@@ -273,7 +274,9 @@ export default function Home() {
       </div>
     </StyledWrapper>
     <div
-      className={`${anton.className} text-xl sm:text-2xl md:text-3xl -ms-4 text-[#ffe5d5] opacity-95`}
+      className={`${anton.className} -ms-1 sm:-ms-1 md:-ms-2 lg:-ms-3 xl:-ms-4 text-[#ffe5d5] opacity-95`}
+    
+      style={{ fontSize: "clamp(0.5rem, 2vw, 3rem)" }}
     >
       Click Me!
     </div>
@@ -282,7 +285,9 @@ export default function Home() {
   {/* Bottom Right - Singh */}
   <div className="absolute bottom-4 right-6 text-red-400 text-right">
     <span
-      className={`${greatVibes.className} text-[6rem] sm:text-[8rem] md:text-[10rem] lg:text-[12rem] xl:text-[14rem]`}
+      className={`${greatVibes.className} `}
+
+      style={{ fontSize: "clamp(4rem, 16vw, 24rem)" }}
     >
       Singh
     </span>

@@ -44,8 +44,14 @@ const Intro = () => {
         </div>
       </div>
       <p 
+        style={{
+          fontSize: "clamp(1.4rem, 2.6vw + 1.4rem, 6rem)",
+          color: "#ffe5d5",
+          opacity: 0.9,
+          zIndex: 10,
+          lineHeight: "1.4"
+        }}
         ref={paragraphRef} 
-        className="text-[#ffe5d5] text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-normal opacity-90 z-10 leading-relaxed sm:leading-relaxed md:leading-relaxed lg:leading-relaxed xl:leading-relaxed 2xl:leading-relaxed"
       >
         Hi, I'm a Computer Science student with a passion for
         technology and problem-solving. I am always eager to learn and
@@ -66,11 +72,11 @@ const Intro = () => {
           <div className="loader">
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">~ Anugrah,</p>
             <div className="words">
-              <span className="word text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">the Innovative Developer 💻</span>
-              <span className="word text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">the Ambitious Learner 📚</span>
-              <span className="word text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">the Determined Engineer ⚙️</span>
-              <span className="word text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">the Visionary Creator 🚀</span>
-              <span className="word text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">the Analytical Thinker 🧠</span>
+              <span className="word" style={{ fontSize: "clamp(1rem, 1.5vw + 0.5rem, 2rem)" }}>the Innovative Developer 💻</span>
+              <span className="word" style={{ fontSize: "clamp(1rem, 1.5vw + 0.5rem, 2rem)" }}>the Ambitious Learner 📚</span>
+              <span className="word" style={{ fontSize: "clamp(1rem, 1.5vw + 0.5rem, 2rem)" }}>the Determined Engineer ⚙️</span>
+              <span className="word" style={{ fontSize: "clamp(1rem, 1.5vw + 0.5rem, 2rem)" }}>the Visionary Creator 🚀</span>
+              <span className="word" style={{ fontSize: "clamp(1rem, 1.5vw + 0.5rem, 2rem)" }}>the Analytical Thinker 🧠</span>
             </div>
           </div>
         </div>
@@ -142,6 +148,7 @@ const StyledWrapper = styled.div`
     }
     color: #ff6467;
     animation: spin_4991 4s infinite;
+    font-size: clamp(1rem, 1.5vw + 0.5rem, 2rem);
   }
 
   @keyframes spin_4991 {

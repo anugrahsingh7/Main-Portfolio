@@ -3,15 +3,15 @@ import React from 'react';
 
 const JourneyCard = () => {
   return (
-    <div className="w-full">
+    <div className="w-full flex items-center">
       <div 
-        className="w-full h-[400px] overflow-hidden font-['Inter']"
+        className="w-full h-[clamp(260px,45vw,600px)] overflow-hidden font-['Inter'] flex "
         style={{
           maskImage: 'linear-gradient(to right, transparent, #000 10% 90%, transparent)',
-          '--width': '400px',
-          '--height': '400px',
+          '--width': 'clamp(300px,36vw,800px)',
+          '--height': 'clamp(220px,34vw,520px)',
           '--quantity': '9',
-          '--gap': '3200px'
+          '--gap': 'clamp(3200px,calc(16*32vw),7200px)'
         }}
       >
         <div className="flex w-full" style={{ minWidth: 'calc((var(--width) + var(--gap)) * var(--quantity))' }}>
@@ -76,8 +76,8 @@ const JourneyCard = () => {
               className="absolute left-full w-[var(--width)] h-[var(--height)] hover:grayscale-0"
               style={{
                 '--position': index + 1,
-                animation: 'autoRun 10s linear infinite',
-                animationDelay: `calc((10s / var(--quantity)) * (var(--position) - 1) - 10s)`,
+                animation: 'autoRun 15s linear infinite',
+                animationDelay: `calc((15s / var(--quantity)) * (var(--position) - 1) - 15s)`,
                 transition: 'all 0.5s ease',
                 marginRight: 'var(--gap)'
               }}
@@ -89,26 +89,32 @@ const JourneyCard = () => {
                   boxShadow: `0 25px 50px -12px ${card.accent}25`
                 }}
               >
-                <div className="relative p-8 flex flex-col h-full bg-gradient-to-b from-black/10 to-black/30">
+                <div className="relative p-3 sm:p-5 md:p-8 flex flex-col h-full bg-gradient-to-b from-black/10 to-black/30">
                   {/* Card Number Indicator */}
-                  <div className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/10 flex items-center justify-center backdrop-blur-sm border border-white/10">
-                    <span className="text-white/90 text-sm font-medium">{index + 1}</span>
+                  <div className="absolute top-2 right-2 md:top-4 md:right-4 w-6 h-6 md:w-8 md:h-8 rounded-full bg-white/10 flex items-center justify-center backdrop-blur-sm border border-white/10">
+                    <span className="text-white/90 text-xs md:text-sm font-medium">{index + 1}</span>
                   </div>
 
                   {/* Title Section */}
-                  <h3 className="text-2xl font-extrabold text-white mb-4 font-['Poppins'] leading-tight tracking-tight">
+                  <h3 
+                    className="font-extrabold text-white mb-2 md:mb-4 font-['Poppins'] leading-tight tracking-tight"
+                    style={{ fontSize: 'clamp(1rem, 1.75vw, 2rem)' }}
+                  >
                     {card.title}
                   </h3>
                   
                   {/* Description Section */}
                   <div className="relative">
-                    <p className="text-[15px] text-white/90 font-['Inter'] leading-relaxed tracking-wide font-normal">
+                    <p 
+                      className="text-white/90 font-['Inter'] leading-relaxed tracking-wide font-normal"
+                      style={{ fontSize: 'clamp(1rem, 1.5vw, 1.65rem)' }}
+                    >
                       {card.description}
                     </p>
                     
                     {/* Decorative Elements */}
-                    <div className="absolute -top-4 -left-4 w-8 h-8 rounded-full bg-white/5 backdrop-blur-sm border border-white/10"></div>
-                    <div className="absolute -bottom-4 -right-4 w-12 h-12 rounded-full bg-white/5 backdrop-blur-sm border border-white/10"></div>
+                    <div className="absolute -top-2 -left-2 md:-top-4 md:-left-4 w-5 h-5 md:w-8 md:h-8 rounded-full bg-white/5 backdrop-blur-sm border border-white/10"></div>
+                    <div className="absolute -bottom-2 -right-2 md:-bottom-4 md:-right-4 w-8 h-8 md:w-12 md:h-12 rounded-full bg-white/5 backdrop-blur-sm border border-white/10"></div>
                   </div>
                 </div>
               </div>
@@ -144,7 +150,7 @@ const JourneyCard = () => {
           transform: scale(1.02);
         }
         div[reverse="true"] :global(.absolute) {
-          animation: reversePlay 10s linear infinite;
+          animation: reversePlay 20s linear infinite;
         }
       `}</style>
     </div>

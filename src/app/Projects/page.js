@@ -8,6 +8,11 @@ const greatVibes = Great_Vibes({ subsets: ["latin"], weight: ["400"] });
 
 const Projects = () => {
   const [hoveredSection, setHoveredSection] = useState(null);
+  const section1Ref = useRef(null);
+  const section2Ref = useRef(null);
+  const section3Ref = useRef(null);
+  const section4Ref = useRef(null);
+  const section5Ref = useRef(null);
 
   return (
     <div id="projects" className="overflow-x-hidden min-h-screen flex flex-col">
@@ -18,7 +23,6 @@ const Projects = () => {
           backgroundColor: hoveredSection === 1 ? "transparent" : "#502214",
         }}
       >
-<<<<<<< HEAD
         {/* Section 1 */}
         <div
           ref={section1Ref}
@@ -272,38 +276,6 @@ const Projects = () => {
             >
             A Music Streaming Web Platform
             </p>
-=======
-        {/* Background image with fade animation */}
-        <div 
-          className={`absolute inset-0 bg-cover bg-no-repeat bg-center transition-opacity duration-700 ease-in-out ${hoveredSection === 1 ? 'opacity-100' : 'opacity-0'}`}
-          style={{ backgroundImage: "url('/Project1BG.png')" }}
-        />
-        {/* Content */}
-        <div className="max-w-2xl flex flex-col items-center relative z-10">
-          {/* Heading with logo overlay */}
-          <div className="relative">
-            <h2 
-              className={`${anton.className} text-[15rem] opacity-95 font-bold relative z-0 transition-colors duration-500 ${hoveredSection === 1 ? 'text-[#502214]' : 'text-white'}`}
-            >
-              CANTEEN
-            </h2>
-            {/* Circular logo centered on the heading */}
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-              <a 
-                target='_blank'
-                href="https://bpitcanteen.vercel.app/snacks" 
-                className="cursor-pointer w-40 h-40 rounded-full flex items-center justify-center shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
-                onMouseEnter={() => setHoveredSection(1)}
-                onMouseLeave={() => setHoveredSection(null)}
-              >
-                <img 
-                  src="/CanteenIcon.png" 
-                  alt="Project1 Logo" 
-                  className="w-full h-full object-contain transition-transform duration-300" 
-                />
-              </a>
-            </div>
->>>>>>> 04f25bf (responsiveness increased)
           </div>
           {/* Subheading */}
           <p 

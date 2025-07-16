@@ -14,9 +14,11 @@ function TechJourney() {
               <span className="text-stroke-white">MY</span>
             </h1>
             {/* JOURNEY with layered effect */}
-            <h1 className={`${anton.className} relative text-[#f3dacb] text-[24rem] font-bold leading-none mt-12 ml-12 opacity-20`}>
+            <h1 className={`${anton.className} relative text-[#f3dacb] font-bold leading-none mt-12 ml-12 opacity-20`}
+             style={{ fontSize: "clamp(6rem, 24vw, 36rem)" }}>
               JOURNEY
-              <span className="absolute inset-0 text-black text-stroke-white opacity-30 -z-10">JOURNEY</span>
+              <span className="absolute inset-0 text-black text-stroke-white opacity-30 -z-10"
+              >JOURNEY</span>
             </h1>
           </div>
         </div>
@@ -33,7 +35,7 @@ function TechJourney() {
       </div>
 
       {/* Original overlay content */}
-      <div className="absolute top-0 left-0 w-full h-full bg-transparent flex items-center justify-center z-10">
+      <div className="absolute top-0 left-0 w-screen h-screen bg-transparent flex items-center justify-center z-10 h-screen">
         <JourneyCard />
       </div>
 
