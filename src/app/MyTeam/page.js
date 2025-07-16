@@ -188,7 +188,7 @@ function MyTeam() {
               <div className={`${anton.className}  font-bold text-red-400 transform group-hover:scale-110 transition-duration-300 drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] text-center`}
               style={{ fontSize: "clamp(0.5rem, 2vw, 3rem)" }}>Sumit Joshi</div>
               <p className="text-center max-w-[240px] sm:max-w-[280px] md:max-w-[320px] lg:max-w-[360px] text-white/90 leading-relaxed font-light hover:text-white transition-all duration-300 drop-shadow-[0_1px_1px_rgba(0,0,0,0.9)]"
-                style={{ fontSize: "clamp(0.3rem, 1.3vw, 2rem)" }}>
+                style={{ fontSize: "clamp(0.3rem, 1.3vw, 3rem)" }}>
                 Sumit is an aspiring software developer with hands-on experience in the MERN stack, he is passionate about building scalable web applications. With a strong foundation in C++, data structures, and algorithms, he enjoy solving complex problems and optimising code efficiency.</p>
               
               <div className="flex gap-2 sm:gap-3">
