@@ -57,7 +57,7 @@ export default function GetInTouch() {
               come to life
             </h1>
             <div className="mt-6 md:mt-8 text-[#ffe5d5]"
-          style={{ fontSize: "clamp(0.375rem, 1.5vw, 2.25rem)" }}>
+          style={{ fontSize: "clamp(0.3rem, 1.3vw, 2rem)" }}>
               If you're looking to collaborate with a passionate and skilled
               team, and would like to hire me and my team for your project or
               idea, please don’t hesitate to get in touch with us right
