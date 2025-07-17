@@ -114,7 +114,7 @@ const Footer = () => {
               </a>
               
               <a 
-                href="https://www.linkedin.com/in/anugrah-singh-7777/"
+                href="https://www.linkedin.com/in/anugrah-singh-161089266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                 target="_blank"
                 rel="noopener noreferrer" 
                 className="group flex items-start text-[#ffe5d5]/70 hover:text-[#ffe5d5] transition-all duration-300"
@@ -127,7 +127,7 @@ const Footer = () => {
               </a>
               
               <a 
-                href="https://github.com/anugrahsingh7777"
+                href="https://github.com/anugrahsingh7"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group flex items-start text-[#ffe5d5]/70 hover:text-[#ffe5d5] transition-all duration-300"
@@ -135,7 +135,7 @@ const Footer = () => {
                 <FaGithub className="w-4 h-4 mt-0.5 mr-3 text-red-400/80 group-hover:text-red-400" />
                 <div className="flex flex-col">
                   <span className="text-sm font-medium group-hover:text-red-400/90 transition-all">GitHub</span>
-                  <span className="text-sm mt-0.5">@anugrahsingh7777</span>
+                  <span className="text-sm mt-0.5">@anugrahsingh7</span>
                 </div>
               </a>
             </div>

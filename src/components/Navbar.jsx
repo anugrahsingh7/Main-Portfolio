@@ -73,7 +73,7 @@ const Navbar = () => {
             <span className="tooltip">Github</span>
             <FaGithub className="text-xl" />
             </button>
-            <button className="icon instagram" onClick={() => window.open('https://www.linkedin.com/in/anugrah-singh-7777/', '_blank')}>
+            <button className="icon instagram" onClick={() => window.open('https://www.linkedin.com/in/anugrah-singh-161089266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app', '_blank')}>
             <span className="tooltip">LinkedIn</span>
             <FaLinkedin className="text-xl"/>
             </button>
