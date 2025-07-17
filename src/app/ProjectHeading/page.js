@@ -119,32 +119,17 @@ function projectHeading() {
   };
   
   useEffect(() => {
-    // Make sure elements are visible if JavaScript is disabled
-    // or if ScrollTrigger fails to initialize
     if (!componentRef.current) return;
-    
-    // First approach: Set up ScrollTrigger
+    const scroller = document.querySelector('[data-scroll-container]');
+    if (!scroller) return; // Don't create ScrollTrigger if scroller is missing
+
     const scrollTrigger = ScrollTrigger.create({
       trigger: componentRef.current,
-      start: "top 80%", // Trigger when 20% of the component is in view
+      start: "top 80%",
       onEnter: playAnimation,
-      once: true
+      once: true,
+      scroller: scroller,
     });
-    
-    // Second approach: Ensure animation plays if component is already in view
-    // on first render (which ScrollTrigger might miss)
-    const timeout = setTimeout(() => {
-      const rect = componentRef.current?.getBoundingClientRect();
-      if (rect && rect.top < window.innerHeight && rect.bottom > 0) {
-        playAnimation();
-      }
-    }, 100);
-    
-    // Third approach: Force animation to play anyway after a delay
-    // This is a fallback if all else fails
-    const forcePlayTimeout = setTimeout(() => {
-      playAnimation();
-    }, 1000);
     
     // Set up hover animations for letter blocks
     letterRefs.current.forEach((letterBlock, index) => {
@@ -189,8 +174,6 @@ function projectHeading() {
     // Cleanup function
     return () => {
       ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-      clearTimeout(timeout);
-      clearTimeout(forcePlayTimeout);
     };
   }, []);
   

@@ -22,11 +22,34 @@ if (typeof window !== 'undefined') {
 const Intro = () => {
   const paragraphRef = useRef(null);
   const [isClient, setIsClient] = useState(false);
+  const lettersRef = useRef([]);
 
   useEffect(() => {
     setIsClient(true);
   }, []);
 
+  useEffect(() => {
+    if (!isClient) return;
+    if (!lettersRef.current) return;
+    gsap.set(lettersRef.current, { opacity: 0 });
+    gsap.to(lettersRef.current, {
+      opacity: 1,
+      ease: "none",
+      stagger: {
+        each: 0.04,
+        amount: 1, // total duration of staggered animation
+      },
+      scrollTrigger: {
+        trigger: paragraphRef.current,
+        start: "top 80%",
+        end: "bottom 20%",
+        scrub: true, // makes the animation progress with scroll
+        // markers: true, // Uncomment for debugging
+      },
+    });
+  }, [isClient]);
+
+  const paragraphText = `Hi, I'm a Computer Science student with a passion for technology and problem-solving. I am always eager to learn and explore new areas in the tech world, building a strong foundation for my future career while working on innovative solutions.`;
   
   return (
     <div id="intro" className={`h-screen w-screen bg-black ${yellowtail.className}`}>
@@ -53,10 +76,20 @@ const Intro = () => {
         }}
         ref={paragraphRef} 
       >
-        Hi, I'm a Computer Science student with a passion for
-        technology and problem-solving. I am always eager to learn and
-        explore new areas in the tech world, building a strong foundation
-        for my future career while working on innovative solutions.
+        {paragraphText.split("").map((char, i) => (
+          <span
+            key={i}
+            ref={el => lettersRef.current[i] = el}
+            style={{
+              display: char === " " ? "inline-block" : "inline-block",
+              opacity: 0,
+              transform: "translateY(10px) scale(0.95)",
+              transition: "opacity 0.3s, transform 0.3s"
+            }}
+          >
+            {char === " " ? '\u00A0' : char}
+          </span>
+        ))}
       </p>
     </div>
   </div>

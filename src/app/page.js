@@ -22,6 +22,7 @@ import MyTeamHeading from "./MyTeamHeading/Page";
 import MyTeam from "./MyTeam/page";
 import GetInTouch from "./GetInTouch/page";
 import Qualities2 from "./Qualities2/page";
+import { motion } from 'framer-motion';
 
 // Move the font loader outside the component
 const anton = Anton({ subsets: ["latin"], weight: ["400"] });
@@ -36,6 +37,10 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
   const mainTimelineRef = useRef(null);
   const sectionsRef = useRef([]);
+  const [showSingh, setShowSingh] = useState(false);
+  const singhRef = useRef(null);
+  const [showSharinganPop, setShowSharinganPop] = useState(false);
+  const sharinganRef = useRef(null);
 
   // Define an image for each letter (update the URLs to your images)
   const letterImages = [
@@ -61,7 +66,7 @@ export default function Home() {
       mainTimelineRef.current = gsap.timeline();
       
       // Main intro animation sequence
-      gsap.fromTo(
+      const anugrahAnim = mainTimelineRef.current.fromTo(
         ".letter-container",
         { opacity: 0, y: 50, rotation: -15, scale: 0.5 },
         {
@@ -72,8 +77,16 @@ export default function Home() {
           duration: 0.8,
           stagger: 0.1,
           ease: "elastic.out(1, 0.5)",
+          onComplete: () => setShowSingh(true),
         }
       );
+
+      // Calculate total duration of ANUGRAH animation
+      const totalDuration = 0.8 + ("ANUGRAH".length - 1) * 0.1; // duration + (n-1)*stagger
+      setTimeout(() => {
+        setShowSingh(true);
+        setShowSharinganPop(true);
+      }, (totalDuration - 1) * 1000); // 1s before end
 
       // Set up scroll-based animations
       const sections = document.querySelectorAll('main > div, section');
@@ -264,18 +277,23 @@ export default function Home() {
   {/* Bottom Left - Click Me! */}
   <div className="absolute bottom-4 left-4 flex items-center text-white">
     <StyledWrapper>
-      <div className="sharingon scale-[0.25] sm:scale-[0.325] md:scale-[0.4] lg:scale-[0.5] xl:scale-[0.6] 2xl:scale-[0.7]">
+      <motion.div
+        ref={sharinganRef}
+        className="sharingon scale-[0.25] sm:scale-[0.325] md:scale-[0.4] lg:scale-[0.5] xl:scale-[0.6] 2xl:scale-[0.7]"
+        initial={{ scale: 1 }}
+        animate={showSharinganPop ? { scale: [1, 1.3, 1] } : {}}
+        transition={{ duration: 0.6, times: [0, 0.5, 1], ease: 'backOut' }}
+      >
         <div className="ring">
           <div className="to" />
           <div className="to" />
           <div className="to" />
           <div className="circle" />
         </div>
-      </div>
+      </motion.div>
     </StyledWrapper>
     <div
       className={`${anton.className} -ms-1 sm:-ms-1 md:-ms-2 lg:-ms-3 xl:-ms-4 text-[#ffe5d5] opacity-95`}
-    
       style={{ fontSize: "clamp(0.5rem, 2vw, 3rem)" }}
     >
       Click Me!
@@ -284,37 +302,37 @@ export default function Home() {
 
   {/* Bottom Right - Singh */}
   <div className="absolute bottom-4 right-6 text-red-400 text-right">
-    <span
+    <motion.span
+      ref={singhRef}
+      initial={{ opacity: 0, y: 40 }}
+      animate={showSingh ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 1, delay: 0.1, ease: 'easeOut' }}
       className={`${greatVibes.className} `}
-
       style={{ fontSize: "clamp(4rem, 16vw, 24rem)" }}
     >
       Singh
-    </span>
+    </motion.span>
   </div>
 </div>
 
+<Intro />
+<TechJourney/>
+<Qualities2/>
+<SkillsHeading/>
+<Skills/>
+<ProjectHeading/>
+<Projects/>
+<MoreProjects/>
+{/* <WorkHeading/> */}
+<Work/>
+{/* <WorkTogether/>
+<Blogs/> */}
+<MyTeamHeading/>
+<MyTeam/>
+<GetInTouch/>
+<Footer/>
 
-
-          
-          <Intro />
-          <TechJourney/>
-          <Qualities2/>
-          <SkillsHeading/>
-          <Skills/>
-          <ProjectHeading/>
-          <Projects/>
-          <MoreProjects/>
-          {/* <WorkHeading/> */}
-          <Work/>
-          {/* <WorkTogether/>
-          <Blogs/> */}
-          <MyTeamHeading/>
-          <MyTeam/>
-          <GetInTouch/>
-          <Footer/> 
-          
-        </>
+</>
       )}
     </div>
   );
@@ -401,4 +419,3 @@ const StyledWrapper = styled.div`
       transform: rotate(360deg);
     }
   }`;
-
