@@ -153,7 +153,7 @@ const Projects = () => {
                 onMouseLeave={() => setHoveredSection(null)}
               >
                 <img 
-                  src="/CCLogo.png" 
+                  src="/CClogo.png" 
                   alt="Project3 Logo" 
                   className="w-full h-full object-cover transition-transform duration-300" 
                 />
