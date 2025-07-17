@@ -28,7 +28,7 @@ const Loader = () => {
       <div className="w-full h-screen bg-black flex justify-center items-center">
         <video
           ref={videoRef}
-          className="w-full h-screen  object-cover bg-black"
+          className="w-full h-screen object-cover bg-black"
           autoPlay
           muted
           playsInline
