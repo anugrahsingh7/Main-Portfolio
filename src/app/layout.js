@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   useEffect(() => {
     const handleResize = () => {
       const isLandscape = window.innerWidth > window.innerHeight; // Check landscape mode
-      const isLargeScreen = window.innerWidth >= 1024 && window.innerHeight >= 600; // Ensures it's a reasonable desktop size
+      const isLargeScreen = window.innerWidth >= 800;
       const userAgent = navigator.userAgent;
       const isIpadPro = /iPad.*OS.*\s([\d_]+)/.test(userAgent); // Detect iPad Pro
 
