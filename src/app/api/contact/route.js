@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { connectToDB } from "@/lib/mongodb";
 import Message from "@/models/Message";
+import { sendContactEmail } from "@/lib/MailSender";
 
 export async function POST(req) {
   try {
@@ -11,10 +12,22 @@ export async function POST(req) {
       return NextResponse.json({ error: "Missing fields" }, { status: 400 });
     }
 
+    // Connect to database and save message
     await connectToDB();
     await Message.create({ name, email, message });
 
-    return NextResponse.json({ message: "Success" }, { status: 200 });
+    // Send email notifications
+    try {
+      await sendContactEmail(name, email, message);
+    } catch (emailError) {
+      console.error("Email sending failed:", emailError);
+      // Continue with the response even if email fails
+      // The message is already saved to database
+    }
+
+    return NextResponse.json({ 
+      message: "Message sent successfully! Check your email for confirmation." 
+    }, { status: 200 });
   } catch (err) {
     console.error("API error:", err);
     return NextResponse.json({ error: "Server error" }, { status: 500 });
