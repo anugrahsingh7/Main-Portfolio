@@ -59,9 +59,7 @@ Message: ${message}
       to: email,
       subject: 'Thank you for contacting me!',
       html: `
-        <div style="text-align: center; margin-bottom: 20px;">
-          <img src="${baseUrl}/Logo.png" alt="Anugrah Singh Logo" style="width: 120px; height: auto; margin-bottom: 15px;">
-        </div>
+        
         <h2>Thank you for contacting me!</h2>
         <p>Hi ${name},</p>
         <p>Thank you for contacting me through my portfolio. I have received your message and will get back to you as soon as possible.</p>
